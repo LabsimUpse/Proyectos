@@ -1,0 +1,12 @@
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe.config
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.pdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csprojResolveAssemblyReference.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.ResolveComReference.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.Form1.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.Properties.Resources.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.GenerateResource.Cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.CoreCompileInputs.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.exe
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.pdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.cteaccwind.resources
