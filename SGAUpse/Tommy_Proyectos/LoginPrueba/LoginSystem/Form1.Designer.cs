@@ -1,6 +1,6 @@
 ﻿namespace LoginSystem
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Sistema de Gestión Académica";
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,8 +110,9 @@
             this.Controls.Add(this.labeluser);
             this.Controls.Add(this.cteuser);
             this.Controls.Add(this.ingresar);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Gestión Académica";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

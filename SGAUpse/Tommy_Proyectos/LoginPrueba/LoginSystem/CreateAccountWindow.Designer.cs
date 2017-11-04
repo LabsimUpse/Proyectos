@@ -166,6 +166,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cteaccwind";
             this.Text = "Crear Cuenta";
+            this.Load += new System.EventHandler(this.cteaccwind_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

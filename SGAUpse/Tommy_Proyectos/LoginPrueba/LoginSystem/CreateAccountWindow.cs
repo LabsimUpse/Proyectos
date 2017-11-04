@@ -68,5 +68,10 @@ namespace LoginSystem
         {
             this.Close();
         }
+
+        private void cteaccwind_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
