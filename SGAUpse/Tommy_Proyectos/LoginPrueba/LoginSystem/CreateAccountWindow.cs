@@ -60,6 +60,7 @@ namespace LoginSystem
             this.Close();
         }
 
+<<<<<<< HEAD
         private void textcuarniv_TextChanged(object sender, EventArgs e)
         {
 
@@ -84,6 +85,10 @@ namespace LoginSystem
 
         private void textusername_TextChanged(object sender, EventArgs e)
         {
+=======
+        private void cteaccwind_Load(object sender, EventArgs e)
+        {
+>>>>>>> 8c17afed8c23815e29cb31e80cf3e3c8e3a4d543
 
         }
     }

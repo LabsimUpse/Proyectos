@@ -1,6 +1,10 @@
 ﻿namespace LoginSystem
 {
+<<<<<<< HEAD:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/LogInWindow.Designer.cs
     partial class loginwind
+=======
+    partial class MainWindow
+>>>>>>> 8c17afed8c23815e29cb31e80cf3e3c8e3a4d543:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/Form1.Designer.cs
     {
         /// <summary>
         /// Required designer variable.
@@ -116,6 +120,7 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Sistema de Gestión Académica";
             // 
+<<<<<<< HEAD:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/LogInWindow.Designer.cs
             // menubarlogin
             // 
             this.menubarlogin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -142,6 +147,9 @@
             this.exitmenuitem.Text = "&Exit";
             // 
             // loginwind
+=======
+            // MainWindow
+>>>>>>> 8c17afed8c23815e29cb31e80cf3e3c8e3a4d543:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/Form1.Designer.cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,6 +161,7 @@
             this.Controls.Add(this.labeluser);
             this.Controls.Add(this.cteuser);
             this.Controls.Add(this.ingresar);
+<<<<<<< HEAD:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/LogInWindow.Designer.cs
             this.Controls.Add(this.menubarlogin);
             this.MainMenuStrip = this.menubarlogin;
             this.MaximumSize = new System.Drawing.Size(550, 500);
@@ -162,6 +171,11 @@
             this.Load += new System.EventHandler(this.loginwind_Load);
             this.menubarlogin.ResumeLayout(false);
             this.menubarlogin.PerformLayout();
+=======
+            this.Name = "MainWindow";
+            this.Text = "Gestión Académica";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
+>>>>>>> 8c17afed8c23815e29cb31e80cf3e3c8e3a4d543:SGAUpse/Tommy_Proyectos/LoginPrueba/LoginSystem/Form1.Designer.cs
             this.ResumeLayout(false);
             this.PerformLayout();
 
