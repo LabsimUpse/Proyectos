@@ -31,7 +31,7 @@ public:
 	int setVec2Length(int x, int y); //establece la longitud del vector
 	void setVec2(int x, int y, int z); //establece el vector
 	float getVec2(int x, int y); //aquí se busca un valor pre-asignado
-	
+	float norma2(int u, int v, int w, int x, int y, int z);
 
 	~Vectores();
 };

@@ -12,3 +12,17 @@ C:\Users\ECP\documents\visual studio 2015\Projects\WindowsFormsApplication5\Wind
 C:\Users\ECP\documents\visual studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form4.resources
 C:\Users\ECP\documents\visual studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
 C:\Users\ECP\Documents\Visual Studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.ResolveComReference.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.ResolveComReference.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\bin\Debug\login.mdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.pdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form1.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form2.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form3.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form4.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Properties.Resources.resources
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache

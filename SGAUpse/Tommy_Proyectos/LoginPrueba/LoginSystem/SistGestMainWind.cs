@@ -7,23 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
-
 
 namespace LoginSystem
 {
-    public partial class Form1 : Form
+    public partial class SistGestMainWind : Form
     {
-        public Form1()
+        public SistGestMainWind()
         {
-            InitializeComponent();
+            InitializeComponent();     
         }
 
-        private void cteuser_Click(object sender, EventArgs e)
+        private void infoDocente_Enter(object sender, EventArgs e)
         {
-            
-            cteaccwind cteaccwind = new cteaccwind();
-            cteaccwind.ShowDialog();   
+
+        }
+
+        private void SistGestMainWind_Load(object sender, EventArgs e)
+        {
             
         }
     }

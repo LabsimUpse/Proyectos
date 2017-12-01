@@ -96,3 +96,18 @@ float Vectores::getVec2(int x, int y) //aquí se busca un valor pre-asignado
 
 	return d[a][b];
 }
+
+
+float Vectores::norma2(int u, int v, int w, int x, int y, int z)
+{
+	float norma;
+	
+
+
+		norma = sqrt(pow(getVec2(u, v), 2) + pow(getVec2(w, x), 2) + pow(getVec2(y, z), 2));
+		cout << "Norma del vector = " << flush;
+		cout << norma << endl;
+
+	
+	return 0;
+}

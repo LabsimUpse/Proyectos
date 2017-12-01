@@ -31,19 +31,18 @@ int main()
 
 	Vectores vec;
 
-	vec.setVec2Length(1,2);
-	vec.setVec2(0, 0, 12);
-	vec.setVec2(0, 1, 16);
+	vec.setVec2Length(1,3);
+	vec.setVec2(0, 0, 13);
+	vec.setVec2(0, 1, 42);
+	vec.setVec2(0, 2, 15);
 	
 	
 	
-	cout << vec.getVec2(6,0) << endl;
+	//cout << vec.getVec2(6,0) << endl;
 
 	float norma;
 
 	norma = sqrt(pow(vec.getVec2(0, 1), 2) + pow(vec.getVec2(0,0), 2));
-
 	cout << norma << endl;
-	
-
+	cout << vec.norma2(0, 0, 0, 1, 0, 2) << endl;
 }
