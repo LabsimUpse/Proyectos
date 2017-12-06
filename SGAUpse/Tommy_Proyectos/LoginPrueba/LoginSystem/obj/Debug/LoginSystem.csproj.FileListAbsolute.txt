@@ -10,7 +10,6 @@ C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\L
 C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.exe
 C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.pdb
 C:\Users\J FALQUEZ AROSEMENA\Documents\Visual Studio 2017\Projects\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.cteaccwind.resources
-<<<<<<< HEAD
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe.config
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.pdb
@@ -23,17 +22,3 @@ C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULA
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.pdb
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.loginwind.resources
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.SistGestMainWind.resources
-=======
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe.config
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.exe
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\LoginSystem.pdb
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csprojResolveAssemblyReference.cache
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.ResolveComReference.cache
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.cteaccwind.resources
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.MainWindow.resources
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.Properties.Resources.resources
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.GenerateResource.Cache
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.csproj.CoreCompileInputs.cache
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.exe
-C:\Users\Valentina\Documents\GitHub\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.pdb
->>>>>>> 8c17afed8c23815e29cb31e80cf3e3c8e3a4d543
