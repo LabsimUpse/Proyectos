@@ -46,14 +46,18 @@
             this.textusername = new System.Windows.Forms.TextBox();
             this.textcont = new System.Windows.Forms.TextBox();
             this.labelcont = new System.Windows.Forms.Label();
-            this.labelcrearcta = new System.Windows.Forms.Label();
+            this.userpic = new System.Windows.Forms.PictureBox();
+            this.addPicButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.userpic)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelced
             // 
             this.labelced.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelced.AutoSize = true;
-            this.labelced.Location = new System.Drawing.Point(16, 42);
+            this.labelced.Location = new System.Drawing.Point(155, 15);
             this.labelced.Name = "labelced";
             this.labelced.Size = new System.Drawing.Size(43, 13);
             this.labelced.TabIndex = 0;
@@ -63,7 +67,7 @@
             // 
             this.labelnomb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelnomb.AutoSize = true;
-            this.labelnomb.Location = new System.Drawing.Point(16, 68);
+            this.labelnomb.Location = new System.Drawing.Point(155, 41);
             this.labelnomb.Name = "labelnomb";
             this.labelnomb.Size = new System.Drawing.Size(52, 13);
             this.labelnomb.TabIndex = 1;
@@ -74,7 +78,7 @@
             // 
             this.labelapel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelapel.AutoSize = true;
-            this.labelapel.Location = new System.Drawing.Point(16, 94);
+            this.labelapel.Location = new System.Drawing.Point(155, 67);
             this.labelapel.Name = "labelapel";
             this.labelapel.Size = new System.Drawing.Size(52, 13);
             this.labelapel.TabIndex = 2;
@@ -84,7 +88,7 @@
             // 
             this.labelterniv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelterniv.AutoSize = true;
-            this.labelterniv.Location = new System.Drawing.Point(16, 120);
+            this.labelterniv.Location = new System.Drawing.Point(155, 93);
             this.labelterniv.Name = "labelterniv";
             this.labelterniv.Size = new System.Drawing.Size(105, 13);
             this.labelterniv.TabIndex = 3;
@@ -93,7 +97,7 @@
             // buttoncreate
             // 
             this.buttoncreate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttoncreate.Location = new System.Drawing.Point(201, 247);
+            this.buttoncreate.Location = new System.Drawing.Point(341, 220);
             this.buttoncreate.Name = "buttoncreate";
             this.buttoncreate.Size = new System.Drawing.Size(75, 23);
             this.buttoncreate.TabIndex = 4;
@@ -104,7 +108,7 @@
             // buttoncancel
             // 
             this.buttoncancel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttoncancel.Location = new System.Drawing.Point(201, 276);
+            this.buttoncancel.Location = new System.Drawing.Point(341, 249);
             this.buttoncancel.Name = "buttoncancel";
             this.buttoncancel.Size = new System.Drawing.Size(75, 23);
             this.buttoncancel.TabIndex = 5;
@@ -115,7 +119,7 @@
             // textced
             // 
             this.textced.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textced.Location = new System.Drawing.Point(132, 39);
+            this.textced.Location = new System.Drawing.Point(272, 12);
             this.textced.Name = "textced";
             this.textced.Size = new System.Drawing.Size(144, 20);
             this.textced.TabIndex = 6;
@@ -124,7 +128,7 @@
             // textnomb
             // 
             this.textnomb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textnomb.Location = new System.Drawing.Point(132, 65);
+            this.textnomb.Location = new System.Drawing.Point(272, 38);
             this.textnomb.Name = "textnomb";
             this.textnomb.Size = new System.Drawing.Size(144, 20);
             this.textnomb.TabIndex = 7;
@@ -133,7 +137,7 @@
             // textapel
             // 
             this.textapel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textapel.Location = new System.Drawing.Point(132, 91);
+            this.textapel.Location = new System.Drawing.Point(272, 64);
             this.textapel.Name = "textapel";
             this.textapel.Size = new System.Drawing.Size(144, 20);
             this.textapel.TabIndex = 8;
@@ -142,7 +146,7 @@
             // texttercniv
             // 
             this.texttercniv.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.texttercniv.Location = new System.Drawing.Point(132, 117);
+            this.texttercniv.Location = new System.Drawing.Point(272, 90);
             this.texttercniv.Name = "texttercniv";
             this.texttercniv.Size = new System.Drawing.Size(144, 20);
             this.texttercniv.TabIndex = 9;
@@ -151,7 +155,7 @@
             // textcuarniv
             // 
             this.textcuarniv.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textcuarniv.Location = new System.Drawing.Point(132, 143);
+            this.textcuarniv.Location = new System.Drawing.Point(272, 116);
             this.textcuarniv.Name = "textcuarniv";
             this.textcuarniv.Size = new System.Drawing.Size(144, 20);
             this.textcuarniv.TabIndex = 11;
@@ -161,7 +165,7 @@
             // 
             this.labelcuarniv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelcuarniv.AutoSize = true;
-            this.labelcuarniv.Location = new System.Drawing.Point(16, 146);
+            this.labelcuarniv.Location = new System.Drawing.Point(155, 119);
             this.labelcuarniv.Name = "labelcuarniv";
             this.labelcuarniv.Size = new System.Drawing.Size(105, 13);
             this.labelcuarniv.TabIndex = 10;
@@ -171,7 +175,7 @@
             // 
             this.labelquinniv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelquinniv.AutoSize = true;
-            this.labelquinniv.Location = new System.Drawing.Point(16, 172);
+            this.labelquinniv.Location = new System.Drawing.Point(155, 145);
             this.labelquinniv.Name = "labelquinniv";
             this.labelquinniv.Size = new System.Drawing.Size(105, 13);
             this.labelquinniv.TabIndex = 12;
@@ -180,7 +184,7 @@
             // textquinniv
             // 
             this.textquinniv.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textquinniv.Location = new System.Drawing.Point(132, 169);
+            this.textquinniv.Location = new System.Drawing.Point(272, 142);
             this.textquinniv.Name = "textquinniv";
             this.textquinniv.Size = new System.Drawing.Size(144, 20);
             this.textquinniv.TabIndex = 13;
@@ -190,7 +194,7 @@
             // 
             this.labelusername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelusername.AutoSize = true;
-            this.labelusername.Location = new System.Drawing.Point(16, 198);
+            this.labelusername.Location = new System.Drawing.Point(155, 171);
             this.labelusername.Name = "labelusername";
             this.labelusername.Size = new System.Drawing.Size(46, 13);
             this.labelusername.TabIndex = 14;
@@ -199,7 +203,7 @@
             // textusername
             // 
             this.textusername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textusername.Location = new System.Drawing.Point(132, 195);
+            this.textusername.Location = new System.Drawing.Point(272, 168);
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(144, 20);
             this.textusername.TabIndex = 15;
@@ -208,7 +212,7 @@
             // textcont
             // 
             this.textcont.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textcont.Location = new System.Drawing.Point(132, 221);
+            this.textcont.Location = new System.Drawing.Point(272, 194);
             this.textcont.Name = "textcont";
             this.textcont.Size = new System.Drawing.Size(144, 20);
             this.textcont.TabIndex = 16;
@@ -219,52 +223,73 @@
             // 
             this.labelcont.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelcont.AutoSize = true;
-            this.labelcont.Location = new System.Drawing.Point(16, 224);
+            this.labelcont.Location = new System.Drawing.Point(155, 197);
             this.labelcont.Name = "labelcont";
             this.labelcont.Size = new System.Drawing.Size(64, 13);
             this.labelcont.TabIndex = 17;
             this.labelcont.Text = "Contraseña:";
             // 
-            // labelcrearcta
+            // userpic
             // 
-            this.labelcrearcta.AutoSize = true;
-            this.labelcrearcta.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelcrearcta.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelcrearcta.Location = new System.Drawing.Point(12, 9);
-            this.labelcrearcta.Name = "labelcrearcta";
-            this.labelcrearcta.Size = new System.Drawing.Size(270, 22);
-            this.labelcrearcta.TabIndex = 18;
-            this.labelcrearcta.Text = "SGA UPSE - CREAR CUENTA";
+            this.userpic.Location = new System.Drawing.Point(6, 15);
+            this.userpic.Name = "userpic";
+            this.userpic.Size = new System.Drawing.Size(135, 147);
+            this.userpic.TabIndex = 27;
+            this.userpic.TabStop = false;
+            // 
+            // addPicButton
+            // 
+            this.addPicButton.Location = new System.Drawing.Point(6, 168);
+            this.addPicButton.Name = "addPicButton";
+            this.addPicButton.Size = new System.Drawing.Size(135, 37);
+            this.addPicButton.TabIndex = 28;
+            this.addPicButton.Text = "Agregar Foto";
+            this.addPicButton.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.addPicButton);
+            this.groupBox1.Controls.Add(this.userpic);
+            this.groupBox1.Controls.Add(this.labelcont);
+            this.groupBox1.Controls.Add(this.textcont);
+            this.groupBox1.Controls.Add(this.textusername);
+            this.groupBox1.Controls.Add(this.labelusername);
+            this.groupBox1.Controls.Add(this.textquinniv);
+            this.groupBox1.Controls.Add(this.labelquinniv);
+            this.groupBox1.Controls.Add(this.textcuarniv);
+            this.groupBox1.Controls.Add(this.labelcuarniv);
+            this.groupBox1.Controls.Add(this.texttercniv);
+            this.groupBox1.Controls.Add(this.textapel);
+            this.groupBox1.Controls.Add(this.textnomb);
+            this.groupBox1.Controls.Add(this.textced);
+            this.groupBox1.Controls.Add(this.buttoncancel);
+            this.groupBox1.Controls.Add(this.buttoncreate);
+            this.groupBox1.Controls.Add(this.labelterniv);
+            this.groupBox1.Controls.Add(this.labelapel);
+            this.groupBox1.Controls.Add(this.labelnomb);
+            this.groupBox1.Controls.Add(this.labelced);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(425, 280);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sistema de Gestión Académica";
             // 
             // cteaccwind
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 302);
-            this.Controls.Add(this.labelcrearcta);
-            this.Controls.Add(this.labelcont);
-            this.Controls.Add(this.textcont);
-            this.Controls.Add(this.textusername);
-            this.Controls.Add(this.labelusername);
-            this.Controls.Add(this.textquinniv);
-            this.Controls.Add(this.labelquinniv);
-            this.Controls.Add(this.textcuarniv);
-            this.Controls.Add(this.labelcuarniv);
-            this.Controls.Add(this.texttercniv);
-            this.Controls.Add(this.textapel);
-            this.Controls.Add(this.textnomb);
-            this.Controls.Add(this.textced);
-            this.Controls.Add(this.buttoncancel);
-            this.Controls.Add(this.buttoncreate);
-            this.Controls.Add(this.labelterniv);
-            this.Controls.Add(this.labelapel);
-            this.Controls.Add(this.labelnomb);
-            this.Controls.Add(this.labelced);
+            this.ClientSize = new System.Drawing.Size(449, 304);
+            this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(465, 343);
+            this.MinimumSize = new System.Drawing.Size(465, 343);
             this.Name = "cteaccwind";
             this.Text = "Crear Cuenta";
             this.Load += new System.EventHandler(this.cteaccwind_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.userpic)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -288,6 +313,8 @@
         private System.Windows.Forms.TextBox textusername;
         private System.Windows.Forms.TextBox textcont;
         private System.Windows.Forms.Label labelcont;
-        private System.Windows.Forms.Label labelcrearcta;
+        private System.Windows.Forms.PictureBox userpic;
+        private System.Windows.Forms.Button addPicButton;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

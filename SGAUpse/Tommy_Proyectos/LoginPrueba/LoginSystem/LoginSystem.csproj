@@ -52,6 +52,8 @@
     <Compile Include="CreateAccountWindow.Designer.cs">
       <DependentUpon>CreateAccountWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="DocInfo.cs" />
     <Compile Include="LogInWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +127,11 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Usuarios-Contraseñas.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -138,8 +138,9 @@
             // exitmenuitem
             // 
             this.exitmenuitem.Name = "exitmenuitem";
-            this.exitmenuitem.Size = new System.Drawing.Size(92, 22);
+            this.exitmenuitem.Size = new System.Drawing.Size(152, 22);
             this.exitmenuitem.Text = "&Exit";
+            this.exitmenuitem.Click += new System.EventHandler(this.exitmenuitem_Click);
             // 
             // loginwind
             // 

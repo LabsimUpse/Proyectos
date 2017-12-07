@@ -15,12 +15,13 @@ namespace LoginSystem
 {
     public partial class cteaccwind : Form
     {
-          
+
+        DatabaseConnection connDB;
 
         public cteaccwind()
         {
             InitializeComponent();
-
+            connDB = new DatabaseConnection();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -51,8 +52,17 @@ namespace LoginSystem
 
         private void buttoncreate_Click(object sender, EventArgs e)
         {
+            DocInfo Doc = new DocInfo();
+            Doc.Nombres1 = textnomb.Text;
+            Doc.Apellidos1 = textapel.Text;
+            Doc.Titulo1a = texttercniv.Text;
+            Doc.Titulo2a = textcuarniv.Text;
+            Doc.Titulo2a = textquinniv.Text;
+            Doc.Usuario1 = textusername.Text;
+            Doc.Password1 = textcont.Text;
 
-          //  using (var cmd = new OleDbCommand("INSERT INTO [Usuarios-Contrseñas] (Nombres, Apellidos, Título (Tercer Nivel), Título (Cuarto Nivel), Título (Quinto Nivel), Usuario, Contraseña) Values (?)", connDb)) ;
+            connDB.dataInsert(Doc);
+            this.Close();
         }
 
         private void buttoncancel_Click(object sender, EventArgs e)
@@ -72,8 +82,6 @@ namespace LoginSystem
 
         private void cteaccwind_Load(object sender, EventArgs e)
         {
-           // var connDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=Usuarios-Contraseñas.mdb;");
-           // connDb.Open();
             
         }
 
