@@ -12,6 +12,14 @@ namespace LoginSystem
 {
     class DocInfo
     {
+        string CI;
+
+        public string CI1
+        {
+            get { return CI; }
+            set { CI = value; }
+        }
+
         string Nombres;
 
         public string Nombres1
@@ -66,5 +74,6 @@ namespace LoginSystem
             get { return Password; }
             set { Password = value; }
         }
+
     }
 }

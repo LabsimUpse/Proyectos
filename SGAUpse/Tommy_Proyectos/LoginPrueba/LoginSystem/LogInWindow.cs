@@ -16,7 +16,7 @@ namespace LoginSystem
 {
     public partial class loginwind : Form
     {
-        private OleDbConnection connectionDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=Usuarios-Contraseñas.mdb");
+        private OleDbConnection connectionDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb");
 
         public loginwind()
         {
@@ -36,7 +36,7 @@ namespace LoginSystem
             connectionDb.Open();
             OleDbCommand cmdDb = new OleDbCommand();
             cmdDb.Connection = connectionDb;
-            cmdDb.CommandText = "select 1 from Usuarios-ContraseñasDataTable where Username='" + username.Text + "' and Password='" + password.Text +"'";
+            cmdDb.CommandText = "select 1 from userpassw where Username='" + username.Text + "' and Password='" + password.Text +"'";
             OleDbDataReader reader = cmdDb.ExecuteReader();
 
             int count = 0;

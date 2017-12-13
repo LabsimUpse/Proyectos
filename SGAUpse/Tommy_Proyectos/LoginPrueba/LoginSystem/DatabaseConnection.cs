@@ -18,7 +18,7 @@ namespace LoginSystem
 
         public DatabaseConnection()
         {
-            connDB = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=Usuarios-Contraseñas.mdb");
+            connDB = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb");
             commDB = connDB.CreateCommand();
         }
 
@@ -26,8 +26,12 @@ namespace LoginSystem
         {
             try
             {
-                commDB.CommandText = "INSERT INTO Usuarios-ContraseñasDataTable(Nombres, Apellidos, TituloTercNiv, TituloCuarNiv, TituloQuinNiv, Usuario, Contraseña) VALUES('" + Doc.Nombres1 + "', '" + Doc.Apellidos1 + "', '" + Doc.Titulo1a + "', '" + Doc.Titulo2a + "', '" + Doc.Titulo3a + "', '" + Doc.Usuario1 + "', '" + Doc.Password1 + "')";
+                commDB.CommandText = "INSERT INTO userpassw([CI], [Nombres], [Apellidos], [TituloTercNiv], [TituloCuarNiv], [TituloQuinNiv], [Username], [Password])  VALUES('" + Doc.CI1 + "', '" + Doc.Nombres1 + "', '" + Doc.Apellidos1 + "', '" + Doc.Titulo1a + "', '" + Doc.Titulo2a + "', '" + Doc.Titulo3a + "', '" + Doc.Usuario1 + "', '" + Doc.Password1 + "')";
                 commDB.CommandType = System.Data.CommandType.Text;
+                
+                connDB.Open();
+
+                commDB.ExecuteNonQuery();
             }
             catch(Exception ex)
             {
