@@ -17,6 +17,7 @@ namespace LoginSystem
     {
 
         DatabaseConnection connDB;
+        
 
         public cteaccwind()
         {
@@ -68,7 +69,7 @@ namespace LoginSystem
 
         private void buttoncancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void textcuarniv_TextChanged(object sender, EventArgs e)

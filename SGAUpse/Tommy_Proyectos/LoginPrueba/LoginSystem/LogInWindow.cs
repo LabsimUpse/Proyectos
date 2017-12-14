@@ -16,19 +16,29 @@ namespace LoginSystem
 {
     public partial class loginwind : Form
     {
+        
         private OleDbConnection connectionDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb");
+
+        DatabaseConnection connDB;
+
+
 
         public loginwind()
         {
             InitializeComponent();
+
         }
 
         private void cteuser_Click(object sender, EventArgs e)
         {
+            grpBoxCteAcc.Visible = true;
+            this.Height = 700;
+            this.Width = 850;
             
-            cteaccwind cteaccwind = new cteaccwind();
-            cteaccwind.ShowDialog();
-            
+           // this.IsMdiContainer = true;
+           // cteaccwind cteaccwind = new cteaccwind();
+           // cteaccwind.MdiParent = this;
+           // cteaccwind.Show();
         }
 
         private void ingresar_Click(object sender, EventArgs e)
@@ -92,5 +102,79 @@ namespace LoginSystem
         {
             this.Close();
         }
+
+        private void grpBoxCteAcc_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textced_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textnomb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textapel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void texttercniv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textcuarniv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textquinniv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textcont_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttoncreate_Click(object sender, EventArgs e)
+        {
+            connDB = new DatabaseConnection();
+            
+            DocInfo Doc = new DocInfo();
+            Doc.CI1 = textced.Text;
+            Doc.Nombres1 = textnomb.Text;
+            Doc.Apellidos1 = textapel.Text;
+            Doc.Titulo1a = texttercniv.Text;
+            Doc.Titulo2a = textcuarniv.Text;
+            Doc.Titulo3a = textquinniv.Text;
+            Doc.Usuario1 = textusername.Text;
+            Doc.Password1 = textcont.Text;
+
+            connDB.dataInsert(Doc);
+            grpBoxCteAcc.Visible = false;
+            this.Width = 350;
+            this.Height = 300;
+
+        }
+
+        private void buttoncancel_Click(object sender, EventArgs e)
+        {
+            grpBoxCteAcc.Visible = false;
+            this.Width = 350;
+            this.Height = 300;
+        }
+
     }
 }

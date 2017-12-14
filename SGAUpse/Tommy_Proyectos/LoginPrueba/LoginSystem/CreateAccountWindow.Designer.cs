@@ -48,9 +48,9 @@
             this.labelcont = new System.Windows.Forms.Label();
             this.userpic = new System.Windows.Forms.PictureBox();
             this.addPicButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpBoxCteAcc = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.userpic)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpBoxCteAcc.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelced
@@ -246,49 +246,49 @@
             this.addPicButton.Text = "Agregar Foto";
             this.addPicButton.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // grpBoxCteAcc
             // 
-            this.groupBox1.Controls.Add(this.addPicButton);
-            this.groupBox1.Controls.Add(this.userpic);
-            this.groupBox1.Controls.Add(this.labelcont);
-            this.groupBox1.Controls.Add(this.textcont);
-            this.groupBox1.Controls.Add(this.textusername);
-            this.groupBox1.Controls.Add(this.labelusername);
-            this.groupBox1.Controls.Add(this.textquinniv);
-            this.groupBox1.Controls.Add(this.labelquinniv);
-            this.groupBox1.Controls.Add(this.textcuarniv);
-            this.groupBox1.Controls.Add(this.labelcuarniv);
-            this.groupBox1.Controls.Add(this.texttercniv);
-            this.groupBox1.Controls.Add(this.textapel);
-            this.groupBox1.Controls.Add(this.textnomb);
-            this.groupBox1.Controls.Add(this.textced);
-            this.groupBox1.Controls.Add(this.buttoncancel);
-            this.groupBox1.Controls.Add(this.buttoncreate);
-            this.groupBox1.Controls.Add(this.labelterniv);
-            this.groupBox1.Controls.Add(this.labelapel);
-            this.groupBox1.Controls.Add(this.labelnomb);
-            this.groupBox1.Controls.Add(this.labelced);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(425, 280);
-            this.groupBox1.TabIndex = 29;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sistema de Gestión Académica";
+            this.grpBoxCteAcc.Controls.Add(this.addPicButton);
+            this.grpBoxCteAcc.Controls.Add(this.userpic);
+            this.grpBoxCteAcc.Controls.Add(this.labelcont);
+            this.grpBoxCteAcc.Controls.Add(this.textcont);
+            this.grpBoxCteAcc.Controls.Add(this.textusername);
+            this.grpBoxCteAcc.Controls.Add(this.labelusername);
+            this.grpBoxCteAcc.Controls.Add(this.textquinniv);
+            this.grpBoxCteAcc.Controls.Add(this.labelquinniv);
+            this.grpBoxCteAcc.Controls.Add(this.textcuarniv);
+            this.grpBoxCteAcc.Controls.Add(this.labelcuarniv);
+            this.grpBoxCteAcc.Controls.Add(this.texttercniv);
+            this.grpBoxCteAcc.Controls.Add(this.textapel);
+            this.grpBoxCteAcc.Controls.Add(this.textnomb);
+            this.grpBoxCteAcc.Controls.Add(this.textced);
+            this.grpBoxCteAcc.Controls.Add(this.buttoncancel);
+            this.grpBoxCteAcc.Controls.Add(this.buttoncreate);
+            this.grpBoxCteAcc.Controls.Add(this.labelterniv);
+            this.grpBoxCteAcc.Controls.Add(this.labelapel);
+            this.grpBoxCteAcc.Controls.Add(this.labelnomb);
+            this.grpBoxCteAcc.Controls.Add(this.labelced);
+            this.grpBoxCteAcc.Location = new System.Drawing.Point(12, 12);
+            this.grpBoxCteAcc.Name = "grpBoxCteAcc";
+            this.grpBoxCteAcc.Size = new System.Drawing.Size(425, 280);
+            this.grpBoxCteAcc.TabIndex = 29;
+            this.grpBoxCteAcc.TabStop = false;
+            this.grpBoxCteAcc.Text = "Sistema de Gestión Académica";
             // 
             // cteaccwind
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 304);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpBoxCteAcc);
             this.MaximumSize = new System.Drawing.Size(465, 343);
             this.MinimumSize = new System.Drawing.Size(465, 343);
             this.Name = "cteaccwind";
             this.Text = "Crear Cuenta";
             this.Load += new System.EventHandler(this.cteaccwind_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userpic)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpBoxCteAcc.ResumeLayout(false);
+            this.grpBoxCteAcc.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -315,6 +315,6 @@
         private System.Windows.Forms.Label labelcont;
         private System.Windows.Forms.PictureBox userpic;
         private System.Windows.Forms.Button addPicButton;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpBoxCteAcc;
     }
 }
