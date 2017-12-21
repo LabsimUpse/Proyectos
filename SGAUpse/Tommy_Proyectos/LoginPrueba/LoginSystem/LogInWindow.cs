@@ -34,11 +34,8 @@ namespace LoginSystem
             grpBoxCteAcc.Visible = true;
             this.Height = 700;
             this.Width = 850;
-            
-           // this.IsMdiContainer = true;
-           // cteaccwind cteaccwind = new cteaccwind();
-           // cteaccwind.MdiParent = this;
-           // cteaccwind.Show();
+            this.CenterToScreen();
+
         }
 
         private void ingresar_Click(object sender, EventArgs e)
@@ -49,23 +46,26 @@ namespace LoginSystem
             cmdDb.CommandText = "select 1 from userpassw where Username='" + username.Text + "' and Password='" + password.Text +"'";
             OleDbDataReader reader = cmdDb.ExecuteReader();
 
-            int count = 0;
-            while(reader.Read())
-            {
-                count = count + 1;
-            }
-            if(count==1)
-            {
-                MessageBox.Show("Login Successful");
-                SistGestMainWind SistGestMainWind = new SistGestMainWind();
-                SistGestMainWind.ShowDialog();
-            }
-            else 
-            {
-                MessageBox.Show("There are two accounts with the same username and password");
-            }
-           
-           
+
+                int count = 0;
+                while (reader.Read())
+                {
+                    count = count + 1;
+                }
+                if (count == 1)
+                {
+                    MessageBox.Show("Login Successfull");
+                    SistGestMainWind SistGestMainWind = new SistGestMainWind();
+                    SistGestMainWind.ShowDialog();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("There are two accounts with the same username and password");
+                }
+                
+
+                
         }
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -174,6 +174,7 @@ namespace LoginSystem
             grpBoxCteAcc.Visible = false;
             this.Width = 350;
             this.Height = 300;
+            this.CenterToScreen();
         }
 
     }

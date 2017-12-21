@@ -384,7 +384,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 311);
+            this.ClientSize = new System.Drawing.Size(334, 261);
             this.Controls.Add(this.grpBoxCteAcc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.password);
@@ -398,6 +398,7 @@
             this.MaximumSize = new System.Drawing.Size(850, 500);
             this.MinimumSize = new System.Drawing.Size(350, 300);
             this.Name = "loginwind";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión Académica";
             this.Load += new System.EventHandler(this.loginwind_Load);
             this.menubarlogin.ResumeLayout(false);
