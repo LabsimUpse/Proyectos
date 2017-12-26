@@ -22,11 +22,11 @@ namespace LoginSystem
             commDB = connDB.CreateCommand();
         }
 
-        public void dataInsert(DocInfo Doc)
+        public void dataInsert(DocInfoGet Doc)
         {
             try
             {
-                commDB.CommandText = "INSERT INTO userpassw([CI], [Nombres], [Apellidos], [TituloTercNiv], [TituloCuarNiv], [TituloQuinNiv], [Username], [Password])  VALUES('" + Doc.CI1 + "', '" + Doc.Nombres1 + "', '" + Doc.Apellidos1 + "', '" + Doc.Titulo1a + "', '" + Doc.Titulo2a + "', '" + Doc.Titulo3a + "', '" + Doc.Usuario1 + "', '" + Doc.Password1 + "')";
+                commDB.CommandText = "INSERT INTO UsersPasswords([CedIdent], [Nombres], [Apellidos], [TituloTercNiv], [TituloCuarNiv], [TituloQuinNiv], [Username], [Password])  VALUES('" + Doc.CedIdent1 + "', '" + Doc.Nomb1 + "', '" + Doc.Apel1 + "', '" + Doc.TTN1 + "', '" + Doc.TCN1 + "', '" + Doc.TQN1 + "', '" + Doc.USN1 + "', '" + Doc.PassW1 + "')";
                 commDB.CommandType = System.Data.CommandType.Text;
                 
                 connDB.Open();

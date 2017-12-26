@@ -53,7 +53,7 @@ namespace LoginSystem
 
         private void buttoncreate_Click(object sender, EventArgs e)
         {
-            DocInfo Doc = new DocInfo();
+            /*DocInfo Doc = new DocInfo();
             Doc.CI1 = textced.Text;
             Doc.Nombres1 = textnomb.Text;
             Doc.Apellidos1 = textapel.Text;
@@ -64,7 +64,7 @@ namespace LoginSystem
             Doc.Password1 = textcont.Text;
 
             connDB.dataInsert(Doc);
-            this.Close();
+            this.Close();*/
         }
 
         private void buttoncancel_Click(object sender, EventArgs e)

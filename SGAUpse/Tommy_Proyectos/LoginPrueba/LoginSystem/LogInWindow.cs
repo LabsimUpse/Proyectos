@@ -150,19 +150,15 @@ namespace LoginSystem
 
         private void buttoncreate_Click(object sender, EventArgs e)
         {
-            connDB = new DatabaseConnection();
             
-            DocInfo Doc = new DocInfo();
-            Doc.CI1 = textced.Text;
-            Doc.Nombres1 = textnomb.Text;
-            Doc.Apellidos1 = textapel.Text;
-            Doc.Titulo1a = texttercniv.Text;
-            Doc.Titulo2a = textcuarniv.Text;
-            Doc.Titulo3a = textquinniv.Text;
-            Doc.Usuario1 = textusername.Text;
-            Doc.Password1 = textcont.Text;
+            //Se crea el usuario que se desea agregar; En caso de error, revisar clase "InsDocInfo"
+            InsDocInfo Docente = new InsDocInfo();
 
-            connDB.dataInsert(Doc);
+
+            //Se utiliza el "DocInfoInsert" Method de la clase "InsDocInfo" para poder agregar el usuario a la base de datos
+            Docente.DocInfoInsert(textced, textnomb, textapel, texttercniv, textcuarniv, textquinniv, textusername, textcont);
+            
+            
             grpBoxCteAcc.Visible = false;
             this.Width = 350;
             this.Height = 300;
