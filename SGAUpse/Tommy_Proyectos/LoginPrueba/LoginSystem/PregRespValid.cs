@@ -8,8 +8,10 @@ namespace LoginSystem
 {
     class PregRespValid
     {
+        public void validarPregResp()
+        {
 
-
+        }
 
     }
 }

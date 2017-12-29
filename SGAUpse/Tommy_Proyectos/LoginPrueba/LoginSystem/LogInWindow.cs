@@ -19,10 +19,6 @@ namespace LoginSystem
         
         private OleDbConnection connectionDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb");
 
-        DatabaseConnection connDB;
-
-
-
         public loginwind()
         {
             InitializeComponent();
@@ -32,7 +28,7 @@ namespace LoginSystem
         private void cteuser_Click(object sender, EventArgs e)
         {
             grpBoxCteAcc.Visible = true;
-            this.Height = 700;
+            this.Height = 650;
             this.Width = 850;
             this.CenterToScreen();
 
@@ -40,32 +36,9 @@ namespace LoginSystem
 
         private void ingresar_Click(object sender, EventArgs e)
         {
-            connectionDb.Open();
-            OleDbCommand cmdDb = new OleDbCommand();
-            cmdDb.Connection = connectionDb;
-            cmdDb.CommandText = "select 1 from userpassw where Username='" + username.Text + "' and Password='" + password.Text +"'";
-            OleDbDataReader reader = cmdDb.ExecuteReader();
-
-
-                int count = 0;
-                while (reader.Read())
-                {
-                    count = count + 1;
-                }
-                if (count == 1)
-                {
-                    MessageBox.Show("Login Successfull");
-                    SistGestMainWind SistGestMainWind = new SistGestMainWind();
-                    SistGestMainWind.ShowDialog();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("There are two accounts with the same username and password");
-                }
-                
-
-                
+            ReadDataBase loginDBReader = new ReadDataBase();
+            loginDBReader.usersPasswReader(textusername.Text, textcont.Text);
+            this.Hide();
         }
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -80,17 +53,13 @@ namespace LoginSystem
 
         private void loginwind_Load(object sender, EventArgs e)
         {
-            try
-            {
-                connectionDb.Open();
-                MessageBox.Show("Connection Successful");
-                connectionDb.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error" + ex);
-            }
-            
+            this.Height = 300;
+            this.Width = 413;
+
+            DatabaseConnection DBTest = new DatabaseConnection();
+            DBTest.DBConnectionTester();
+            this.CenterToScreen();
+
         }
 
         private void menubarlogin_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -160,7 +129,7 @@ namespace LoginSystem
             
             
             grpBoxCteAcc.Visible = false;
-            this.Width = 350;
+            this.Width = 413;
             this.Height = 300;
 
         }
@@ -171,6 +140,21 @@ namespace LoginSystem
             this.Width = 350;
             this.Height = 300;
             this.CenterToScreen();
+        }
+
+        private void cmbBoxRecPassMet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpBoxRecPass_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textRespPreg4_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

@@ -39,6 +39,22 @@
             this.filemenu = new System.Windows.Forms.ToolStripMenuItem();
             this.exitmenuitem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpBoxCteAcc = new System.Windows.Forms.GroupBox();
+            this.grpBoxPregSeg = new System.Windows.Forms.GroupBox();
+            this.labelPreg5 = new System.Windows.Forms.Label();
+            this.labelPreg4 = new System.Windows.Forms.Label();
+            this.labelPreg3 = new System.Windows.Forms.Label();
+            this.labelPreg2 = new System.Windows.Forms.Label();
+            this.textRespPreg5 = new System.Windows.Forms.TextBox();
+            this.textRespPreg4 = new System.Windows.Forms.TextBox();
+            this.textRespPreg3 = new System.Windows.Forms.TextBox();
+            this.textRespPreg2 = new System.Windows.Forms.TextBox();
+            this.textRespPreg1 = new System.Windows.Forms.TextBox();
+            this.cmbBoxPreg5 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxPreg4 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxPreg3 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxPreg2 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxPreg1 = new System.Windows.Forms.ComboBox();
+            this.labelPreg1 = new System.Windows.Forms.Label();
             this.addPicButton = new System.Windows.Forms.Button();
             this.userpic = new System.Windows.Forms.PictureBox();
             this.labelcont = new System.Windows.Forms.Label();
@@ -59,14 +75,22 @@
             this.labelapel = new System.Windows.Forms.Label();
             this.labelnomb = new System.Windows.Forms.Label();
             this.labelced = new System.Windows.Forms.Label();
+            this.passrecov = new System.Windows.Forms.Button();
+            this.grpBoxRecPass = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbBoxRecPassMet = new System.Windows.Forms.ComboBox();
+            this.grpBoxLogIn = new System.Windows.Forms.GroupBox();
             this.menubarlogin.SuspendLayout();
             this.grpBoxCteAcc.SuspendLayout();
+            this.grpBoxPregSeg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userpic)).BeginInit();
+            this.grpBoxRecPass.SuspendLayout();
+            this.grpBoxLogIn.SuspendLayout();
             this.SuspendLayout();
             // 
             // ingresar
             // 
-            this.ingresar.Location = new System.Drawing.Point(191, 196);
+            this.ingresar.Location = new System.Drawing.Point(260, 167);
             this.ingresar.Name = "ingresar";
             this.ingresar.Size = new System.Drawing.Size(113, 23);
             this.ingresar.TabIndex = 0;
@@ -76,7 +100,7 @@
             // 
             // cteuser
             // 
-            this.cteuser.Location = new System.Drawing.Point(191, 226);
+            this.cteuser.Location = new System.Drawing.Point(260, 197);
             this.cteuser.Name = "cteuser";
             this.cteuser.Size = new System.Drawing.Size(113, 23);
             this.cteuser.TabIndex = 1;
@@ -87,7 +111,7 @@
             // labeluser
             // 
             this.labeluser.AutoSize = true;
-            this.labeluser.Location = new System.Drawing.Point(52, 99);
+            this.labeluser.Location = new System.Drawing.Point(69, 79);
             this.labeluser.Name = "labeluser";
             this.labeluser.Size = new System.Drawing.Size(46, 13);
             this.labeluser.TabIndex = 2;
@@ -96,7 +120,7 @@
             // labelpassw
             // 
             this.labelpassw.AutoSize = true;
-            this.labelpassw.Location = new System.Drawing.Point(52, 135);
+            this.labelpassw.Location = new System.Drawing.Point(69, 115);
             this.labelpassw.Name = "labelpassw";
             this.labelpassw.Size = new System.Drawing.Size(64, 13);
             this.labelpassw.TabIndex = 3;
@@ -104,7 +128,7 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(131, 96);
+            this.username.Location = new System.Drawing.Point(178, 76);
             this.username.MaximumSize = new System.Drawing.Size(149, 20);
             this.username.MinimumSize = new System.Drawing.Size(149, 20);
             this.username.Name = "username";
@@ -114,19 +138,20 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(131, 128);
+            this.password.Location = new System.Drawing.Point(178, 112);
             this.password.MaximumSize = new System.Drawing.Size(149, 20);
             this.password.MinimumSize = new System.Drawing.Size(149, 20);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(149, 20);
             this.password.TabIndex = 5;
+            this.password.UseSystemPasswordChar = true;
             this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 24);
+            this.label1.Location = new System.Drawing.Point(55, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 24);
             this.label1.TabIndex = 6;
@@ -138,7 +163,7 @@
             this.filemenu});
             this.menubarlogin.Location = new System.Drawing.Point(0, 0);
             this.menubarlogin.Name = "menubarlogin";
-            this.menubarlogin.Size = new System.Drawing.Size(334, 24);
+            this.menubarlogin.Size = new System.Drawing.Size(834, 24);
             this.menubarlogin.TabIndex = 7;
             this.menubarlogin.Text = "menuStrip1";
             this.menubarlogin.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menubarlogin_ItemClicked);
@@ -160,6 +185,7 @@
             // 
             // grpBoxCteAcc
             // 
+            this.grpBoxCteAcc.Controls.Add(this.grpBoxPregSeg);
             this.grpBoxCteAcc.Controls.Add(this.addPicButton);
             this.grpBoxCteAcc.Controls.Add(this.userpic);
             this.grpBoxCteAcc.Controls.Add(this.labelcont);
@@ -180,13 +206,195 @@
             this.grpBoxCteAcc.Controls.Add(this.labelapel);
             this.grpBoxCteAcc.Controls.Add(this.labelnomb);
             this.grpBoxCteAcc.Controls.Add(this.labelced);
-            this.grpBoxCteAcc.Location = new System.Drawing.Point(397, 27);
+            this.grpBoxCteAcc.Location = new System.Drawing.Point(397, 29);
             this.grpBoxCteAcc.Name = "grpBoxCteAcc";
-            this.grpBoxCteAcc.Size = new System.Drawing.Size(425, 280);
+            this.grpBoxCteAcc.Size = new System.Drawing.Size(425, 577);
             this.grpBoxCteAcc.TabIndex = 32;
             this.grpBoxCteAcc.TabStop = false;
             this.grpBoxCteAcc.Text = "Sistema de Gestión Académica";
             this.grpBoxCteAcc.Visible = false;
+            // 
+            // grpBoxPregSeg
+            // 
+            this.grpBoxPregSeg.Controls.Add(this.labelPreg5);
+            this.grpBoxPregSeg.Controls.Add(this.labelPreg4);
+            this.grpBoxPregSeg.Controls.Add(this.labelPreg3);
+            this.grpBoxPregSeg.Controls.Add(this.labelPreg2);
+            this.grpBoxPregSeg.Controls.Add(this.textRespPreg5);
+            this.grpBoxPregSeg.Controls.Add(this.textRespPreg4);
+            this.grpBoxPregSeg.Controls.Add(this.textRespPreg3);
+            this.grpBoxPregSeg.Controls.Add(this.textRespPreg2);
+            this.grpBoxPregSeg.Controls.Add(this.textRespPreg1);
+            this.grpBoxPregSeg.Controls.Add(this.cmbBoxPreg5);
+            this.grpBoxPregSeg.Controls.Add(this.cmbBoxPreg4);
+            this.grpBoxPregSeg.Controls.Add(this.cmbBoxPreg3);
+            this.grpBoxPregSeg.Controls.Add(this.cmbBoxPreg2);
+            this.grpBoxPregSeg.Controls.Add(this.cmbBoxPreg1);
+            this.grpBoxPregSeg.Controls.Add(this.labelPreg1);
+            this.grpBoxPregSeg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxPregSeg.Location = new System.Drawing.Point(6, 220);
+            this.grpBoxPregSeg.Name = "grpBoxPregSeg";
+            this.grpBoxPregSeg.Size = new System.Drawing.Size(413, 288);
+            this.grpBoxPregSeg.TabIndex = 34;
+            this.grpBoxPregSeg.TabStop = false;
+            this.grpBoxPregSeg.Text = "Preguntas de Seguridad";
+            // 
+            // labelPreg5
+            // 
+            this.labelPreg5.AutoSize = true;
+            this.labelPreg5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreg5.Location = new System.Drawing.Point(41, 234);
+            this.labelPreg5.Name = "labelPreg5";
+            this.labelPreg5.Size = new System.Drawing.Size(62, 13);
+            this.labelPreg5.TabIndex = 42;
+            this.labelPreg5.Text = "Pregunta 5:";
+            // 
+            // labelPreg4
+            // 
+            this.labelPreg4.AutoSize = true;
+            this.labelPreg4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreg4.Location = new System.Drawing.Point(41, 181);
+            this.labelPreg4.Name = "labelPreg4";
+            this.labelPreg4.Size = new System.Drawing.Size(62, 13);
+            this.labelPreg4.TabIndex = 41;
+            this.labelPreg4.Text = "Pregunta 4:";
+            // 
+            // labelPreg3
+            // 
+            this.labelPreg3.AutoSize = true;
+            this.labelPreg3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreg3.Location = new System.Drawing.Point(41, 128);
+            this.labelPreg3.Name = "labelPreg3";
+            this.labelPreg3.Size = new System.Drawing.Size(62, 13);
+            this.labelPreg3.TabIndex = 40;
+            this.labelPreg3.Text = "Pregunta 3:";
+            // 
+            // labelPreg2
+            // 
+            this.labelPreg2.AutoSize = true;
+            this.labelPreg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreg2.Location = new System.Drawing.Point(41, 75);
+            this.labelPreg2.Name = "labelPreg2";
+            this.labelPreg2.Size = new System.Drawing.Size(62, 13);
+            this.labelPreg2.TabIndex = 39;
+            this.labelPreg2.Text = "Pregunta 2:";
+            // 
+            // textRespPreg5
+            // 
+            this.textRespPreg5.Location = new System.Drawing.Point(136, 257);
+            this.textRespPreg5.Name = "textRespPreg5";
+            this.textRespPreg5.Size = new System.Drawing.Size(271, 20);
+            this.textRespPreg5.TabIndex = 38;
+            // 
+            // textRespPreg4
+            // 
+            this.textRespPreg4.Location = new System.Drawing.Point(136, 205);
+            this.textRespPreg4.Name = "textRespPreg4";
+            this.textRespPreg4.Size = new System.Drawing.Size(271, 20);
+            this.textRespPreg4.TabIndex = 37;
+            this.textRespPreg4.TextChanged += new System.EventHandler(this.textRespPreg4_TextChanged);
+            // 
+            // textRespPreg3
+            // 
+            this.textRespPreg3.Location = new System.Drawing.Point(136, 152);
+            this.textRespPreg3.Name = "textRespPreg3";
+            this.textRespPreg3.Size = new System.Drawing.Size(271, 20);
+            this.textRespPreg3.TabIndex = 36;
+            // 
+            // textRespPreg2
+            // 
+            this.textRespPreg2.Location = new System.Drawing.Point(136, 99);
+            this.textRespPreg2.Name = "textRespPreg2";
+            this.textRespPreg2.Size = new System.Drawing.Size(271, 20);
+            this.textRespPreg2.TabIndex = 35;
+            // 
+            // textRespPreg1
+            // 
+            this.textRespPreg1.Location = new System.Drawing.Point(136, 46);
+            this.textRespPreg1.Name = "textRespPreg1";
+            this.textRespPreg1.Size = new System.Drawing.Size(271, 20);
+            this.textRespPreg1.TabIndex = 34;
+            // 
+            // cmbBoxPreg5
+            // 
+            this.cmbBoxPreg5.FormattingEnabled = true;
+            this.cmbBoxPreg5.Items.AddRange(new object[] {
+            "¿Animal preferido?",
+            "¿Medio de transporte preferido?",
+            "¿Marca de ropa preferida?",
+            "¿Prenda de vestir preferida?",
+            "¿Caricatura preferida de la infancia?"});
+            this.cmbBoxPreg5.Location = new System.Drawing.Point(136, 231);
+            this.cmbBoxPreg5.Name = "cmbBoxPreg5";
+            this.cmbBoxPreg5.Size = new System.Drawing.Size(271, 21);
+            this.cmbBoxPreg5.TabIndex = 33;
+            // 
+            // cmbBoxPreg4
+            // 
+            this.cmbBoxPreg4.FormattingEnabled = true;
+            this.cmbBoxPreg4.Items.AddRange(new object[] {
+            "¿Estado o provincia donde ha residido la mayor parte de su vida?",
+            "¿Ciudad donde ha residido la mayor parte de su vida?",
+            "¿Lugar más preferido para visitar?",
+            "¿Dirección del lugar donde ha residido la mayor parte de su vida?",
+            "¿Lugar menos preferido para visitar?"});
+            this.cmbBoxPreg4.Location = new System.Drawing.Point(136, 178);
+            this.cmbBoxPreg4.Name = "cmbBoxPreg4";
+            this.cmbBoxPreg4.Size = new System.Drawing.Size(271, 21);
+            this.cmbBoxPreg4.TabIndex = 32;
+            // 
+            // cmbBoxPreg3
+            // 
+            this.cmbBoxPreg3.FormattingEnabled = true;
+            this.cmbBoxPreg3.Items.AddRange(new object[] {
+            "¿Su grupo musical favorito?",
+            "¿Su pasatiempo favorito?",
+            "¿Su deporte favorito?",
+            "¿Su comida favorita?",
+            "¿Su postre favorito?"});
+            this.cmbBoxPreg3.Location = new System.Drawing.Point(136, 125);
+            this.cmbBoxPreg3.Name = "cmbBoxPreg3";
+            this.cmbBoxPreg3.Size = new System.Drawing.Size(271, 21);
+            this.cmbBoxPreg3.TabIndex = 31;
+            // 
+            // cmbBoxPreg2
+            // 
+            this.cmbBoxPreg2.FormattingEnabled = true;
+            this.cmbBoxPreg2.Items.AddRange(new object[] {
+            "¿Cuál es el año de nacimiento de su abuelo paterno?",
+            "¿Cuál es el año de nacimiento de su abuelo materno?",
+            "¿Cómo se llama la escuela donde estudió?",
+            "¿En qué tipo de vivienda vive actualmente?",
+            "¿Cuál es la marca de su primer vehículo?"});
+            this.cmbBoxPreg2.Location = new System.Drawing.Point(136, 72);
+            this.cmbBoxPreg2.Name = "cmbBoxPreg2";
+            this.cmbBoxPreg2.Size = new System.Drawing.Size(271, 21);
+            this.cmbBoxPreg2.TabIndex = 30;
+            // 
+            // cmbBoxPreg1
+            // 
+            this.cmbBoxPreg1.AllowDrop = true;
+            this.cmbBoxPreg1.FormattingEnabled = true;
+            this.cmbBoxPreg1.Items.AddRange(new object[] {
+            "¿Cuál es su color favorito?",
+            "¿Cómo se llamaba su papá?",
+            "¿Dónde vivía cuando era niño/a?",
+            "¿Dónde estudió la escuela?",
+            "¿En qué año se graduó de la Educación Secundaria?"});
+            this.cmbBoxPreg1.Location = new System.Drawing.Point(136, 19);
+            this.cmbBoxPreg1.Name = "cmbBoxPreg1";
+            this.cmbBoxPreg1.Size = new System.Drawing.Size(271, 21);
+            this.cmbBoxPreg1.TabIndex = 0;
+            // 
+            // labelPreg1
+            // 
+            this.labelPreg1.AutoSize = true;
+            this.labelPreg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPreg1.Location = new System.Drawing.Point(41, 22);
+            this.labelPreg1.Name = "labelPreg1";
+            this.labelPreg1.Size = new System.Drawing.Size(62, 13);
+            this.labelPreg1.TabIndex = 29;
+            this.labelPreg1.Text = "Pregunta 1:";
             // 
             // addPicButton
             // 
@@ -207,7 +415,7 @@
             // 
             // labelcont
             // 
-            this.labelcont.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelcont.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelcont.AutoSize = true;
             this.labelcont.Location = new System.Drawing.Point(155, 197);
             this.labelcont.Name = "labelcont";
@@ -217,7 +425,7 @@
             // 
             // textcont
             // 
-            this.textcont.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textcont.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textcont.Location = new System.Drawing.Point(272, 194);
             this.textcont.Name = "textcont";
             this.textcont.Size = new System.Drawing.Size(144, 20);
@@ -227,7 +435,7 @@
             // 
             // textusername
             // 
-            this.textusername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textusername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textusername.Location = new System.Drawing.Point(272, 168);
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(144, 20);
@@ -236,7 +444,7 @@
             // 
             // labelusername
             // 
-            this.labelusername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelusername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelusername.AutoSize = true;
             this.labelusername.Location = new System.Drawing.Point(155, 171);
             this.labelusername.Name = "labelusername";
@@ -246,7 +454,7 @@
             // 
             // textquinniv
             // 
-            this.textquinniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textquinniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textquinniv.Location = new System.Drawing.Point(272, 142);
             this.textquinniv.Name = "textquinniv";
             this.textquinniv.Size = new System.Drawing.Size(144, 20);
@@ -255,7 +463,7 @@
             // 
             // labelquinniv
             // 
-            this.labelquinniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelquinniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelquinniv.AutoSize = true;
             this.labelquinniv.Location = new System.Drawing.Point(155, 145);
             this.labelquinniv.Name = "labelquinniv";
@@ -265,7 +473,7 @@
             // 
             // textcuarniv
             // 
-            this.textcuarniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textcuarniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textcuarniv.Location = new System.Drawing.Point(272, 116);
             this.textcuarniv.Name = "textcuarniv";
             this.textcuarniv.Size = new System.Drawing.Size(144, 20);
@@ -274,7 +482,7 @@
             // 
             // labelcuarniv
             // 
-            this.labelcuarniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelcuarniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelcuarniv.AutoSize = true;
             this.labelcuarniv.Location = new System.Drawing.Point(155, 119);
             this.labelcuarniv.Name = "labelcuarniv";
@@ -284,7 +492,7 @@
             // 
             // texttercniv
             // 
-            this.texttercniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.texttercniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.texttercniv.Location = new System.Drawing.Point(272, 90);
             this.texttercniv.Name = "texttercniv";
             this.texttercniv.Size = new System.Drawing.Size(144, 20);
@@ -293,7 +501,7 @@
             // 
             // textapel
             // 
-            this.textapel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textapel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textapel.Location = new System.Drawing.Point(272, 64);
             this.textapel.Name = "textapel";
             this.textapel.Size = new System.Drawing.Size(144, 20);
@@ -302,7 +510,7 @@
             // 
             // textnomb
             // 
-            this.textnomb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textnomb.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textnomb.Location = new System.Drawing.Point(272, 38);
             this.textnomb.Name = "textnomb";
             this.textnomb.Size = new System.Drawing.Size(144, 20);
@@ -311,7 +519,7 @@
             // 
             // textced
             // 
-            this.textced.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textced.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textced.Location = new System.Drawing.Point(272, 12);
             this.textced.Name = "textced";
             this.textced.Size = new System.Drawing.Size(144, 20);
@@ -320,8 +528,8 @@
             // 
             // buttoncancel
             // 
-            this.buttoncancel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttoncancel.Location = new System.Drawing.Point(341, 249);
+            this.buttoncancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttoncancel.Location = new System.Drawing.Point(344, 548);
             this.buttoncancel.Name = "buttoncancel";
             this.buttoncancel.Size = new System.Drawing.Size(75, 23);
             this.buttoncancel.TabIndex = 5;
@@ -331,8 +539,8 @@
             // 
             // buttoncreate
             // 
-            this.buttoncreate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttoncreate.Location = new System.Drawing.Point(341, 220);
+            this.buttoncreate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttoncreate.Location = new System.Drawing.Point(344, 519);
             this.buttoncreate.Name = "buttoncreate";
             this.buttoncreate.Size = new System.Drawing.Size(75, 23);
             this.buttoncreate.TabIndex = 4;
@@ -342,7 +550,7 @@
             // 
             // labelterniv
             // 
-            this.labelterniv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelterniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelterniv.AutoSize = true;
             this.labelterniv.Location = new System.Drawing.Point(155, 93);
             this.labelterniv.Name = "labelterniv";
@@ -352,7 +560,7 @@
             // 
             // labelapel
             // 
-            this.labelapel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelapel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelapel.AutoSize = true;
             this.labelapel.Location = new System.Drawing.Point(155, 67);
             this.labelapel.Name = "labelapel";
@@ -362,7 +570,7 @@
             // 
             // labelnomb
             // 
-            this.labelnomb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelnomb.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelnomb.AutoSize = true;
             this.labelnomb.Location = new System.Drawing.Point(155, 41);
             this.labelnomb.Name = "labelnomb";
@@ -372,7 +580,7 @@
             // 
             // labelced
             // 
-            this.labelced.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelced.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelced.AutoSize = true;
             this.labelced.Location = new System.Drawing.Point(155, 15);
             this.labelced.Name = "labelced";
@@ -380,23 +588,77 @@
             this.labelced.TabIndex = 0;
             this.labelced.Text = "Cédula:";
             // 
+            // passrecov
+            // 
+            this.passrecov.Enabled = false;
+            this.passrecov.Location = new System.Drawing.Point(141, 174);
+            this.passrecov.Name = "passrecov";
+            this.passrecov.Size = new System.Drawing.Size(113, 36);
+            this.passrecov.TabIndex = 33;
+            this.passrecov.Text = "Recuperar Contraseña";
+            this.passrecov.UseVisualStyleBackColor = true;
+            // 
+            // grpBoxRecPass
+            // 
+            this.grpBoxRecPass.Controls.Add(this.label2);
+            this.grpBoxRecPass.Controls.Add(this.cmbBoxRecPassMet);
+            this.grpBoxRecPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxRecPass.Location = new System.Drawing.Point(12, 261);
+            this.grpBoxRecPass.Name = "grpBoxRecPass";
+            this.grpBoxRecPass.Size = new System.Drawing.Size(379, 345);
+            this.grpBoxRecPass.TabIndex = 34;
+            this.grpBoxRecPass.TabStop = false;
+            this.grpBoxRecPass.Text = "Recuperar Contraseña";
+            this.grpBoxRecPass.Visible = false;
+            this.grpBoxRecPass.Enter += new System.EventHandler(this.grpBoxRecPass_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(297, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "¿Cómo desea recuperar su Contraseña?";
+            // 
+            // cmbBoxRecPassMet
+            // 
+            this.cmbBoxRecPassMet.FormattingEnabled = true;
+            this.cmbBoxRecPassMet.Location = new System.Drawing.Point(9, 49);
+            this.cmbBoxRecPassMet.Name = "cmbBoxRecPassMet";
+            this.cmbBoxRecPassMet.Size = new System.Drawing.Size(294, 24);
+            this.cmbBoxRecPassMet.TabIndex = 0;
+            this.cmbBoxRecPassMet.SelectedIndexChanged += new System.EventHandler(this.cmbBoxRecPassMet_SelectedIndexChanged);
+            // 
+            // grpBoxLogIn
+            // 
+            this.grpBoxLogIn.Controls.Add(this.passrecov);
+            this.grpBoxLogIn.Controls.Add(this.label1);
+            this.grpBoxLogIn.Controls.Add(this.labeluser);
+            this.grpBoxLogIn.Controls.Add(this.password);
+            this.grpBoxLogIn.Controls.Add(this.labelpassw);
+            this.grpBoxLogIn.Controls.Add(this.username);
+            this.grpBoxLogIn.Controls.Add(this.cteuser);
+            this.grpBoxLogIn.Controls.Add(this.ingresar);
+            this.grpBoxLogIn.Location = new System.Drawing.Point(12, 29);
+            this.grpBoxLogIn.Name = "grpBoxLogIn";
+            this.grpBoxLogIn.Size = new System.Drawing.Size(379, 226);
+            this.grpBoxLogIn.TabIndex = 35;
+            this.grpBoxLogIn.TabStop = false;
+            // 
             // loginwind
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 261);
+            this.ClientSize = new System.Drawing.Size(834, 611);
+            this.Controls.Add(this.grpBoxLogIn);
+            this.Controls.Add(this.grpBoxRecPass);
             this.Controls.Add(this.grpBoxCteAcc);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
-            this.Controls.Add(this.labelpassw);
-            this.Controls.Add(this.labeluser);
-            this.Controls.Add(this.cteuser);
-            this.Controls.Add(this.ingresar);
             this.Controls.Add(this.menubarlogin);
             this.MainMenuStrip = this.menubarlogin;
-            this.MaximumSize = new System.Drawing.Size(850, 500);
-            this.MinimumSize = new System.Drawing.Size(350, 300);
+            this.MaximumSize = new System.Drawing.Size(850, 650);
+            this.MinimumSize = new System.Drawing.Size(413, 300);
             this.Name = "loginwind";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión Académica";
@@ -405,7 +667,13 @@
             this.menubarlogin.PerformLayout();
             this.grpBoxCteAcc.ResumeLayout(false);
             this.grpBoxCteAcc.PerformLayout();
+            this.grpBoxPregSeg.ResumeLayout(false);
+            this.grpBoxPregSeg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userpic)).EndInit();
+            this.grpBoxRecPass.ResumeLayout(false);
+            this.grpBoxRecPass.PerformLayout();
+            this.grpBoxLogIn.ResumeLayout(false);
+            this.grpBoxLogIn.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,6 +712,27 @@
         private System.Windows.Forms.Label labelapel;
         private System.Windows.Forms.Label labelnomb;
         private System.Windows.Forms.Label labelced;
+        private System.Windows.Forms.Button passrecov;
+        private System.Windows.Forms.GroupBox grpBoxRecPass;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbBoxRecPassMet;
+        private System.Windows.Forms.GroupBox grpBoxPregSeg;
+        private System.Windows.Forms.TextBox textRespPreg5;
+        private System.Windows.Forms.TextBox textRespPreg4;
+        private System.Windows.Forms.TextBox textRespPreg3;
+        private System.Windows.Forms.TextBox textRespPreg2;
+        private System.Windows.Forms.TextBox textRespPreg1;
+        private System.Windows.Forms.ComboBox cmbBoxPreg5;
+        private System.Windows.Forms.ComboBox cmbBoxPreg4;
+        private System.Windows.Forms.ComboBox cmbBoxPreg3;
+        private System.Windows.Forms.ComboBox cmbBoxPreg2;
+        private System.Windows.Forms.ComboBox cmbBoxPreg1;
+        private System.Windows.Forms.Label labelPreg1;
+        private System.Windows.Forms.Label labelPreg5;
+        private System.Windows.Forms.Label labelPreg4;
+        private System.Windows.Forms.Label labelPreg3;
+        private System.Windows.Forms.Label labelPreg2;
+        private System.Windows.Forms.GroupBox grpBoxLogIn;
     }
 }
 
