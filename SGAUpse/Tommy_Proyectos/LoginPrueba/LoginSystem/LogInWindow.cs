@@ -36,9 +36,19 @@ namespace LoginSystem
 
         private void ingresar_Click(object sender, EventArgs e)
         {
-            ReadDataBase loginDBReader = new ReadDataBase();
-            loginDBReader.usersPasswReader(textusername.Text, textcont.Text);
-            this.Hide();
+            try
+            {
+                ReadDataBase loginDBReader = new ReadDataBase();
+                loginDBReader.usersPasswReader(textusername.Text, textcont.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("DBReader Error" + ex);
+            }
+            finally
+            {
+                connectionDb.Close();
+            }
         }
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -155,6 +165,14 @@ namespace LoginSystem
         private void textRespPreg4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void passrecov_Click(object sender, EventArgs e)
+        {
+            grpBoxRecPass.Visible = true;
+            this.Height = 850;
+            this.Width = 350;
+            this.CenterToScreen();
         }
 
     }

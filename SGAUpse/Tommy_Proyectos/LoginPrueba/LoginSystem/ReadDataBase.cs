@@ -18,14 +18,11 @@ namespace LoginSystem
 
         public void usersPasswReader(string usn, string pword)
         {
-            
-
             connectionDb.Open();
             OleDbCommand cmdDb = new OleDbCommand();
             cmdDb.Connection = connectionDb;
-            cmdDb.CommandText = "select 1 from UsersPasswords where Username='" + usn + "' and Password='" + pword + "'";
+            cmdDb.CommandText = "select 1 from UsersPasswordsDocentes where Username='" + usn + "' and Password='" + pword + "'";
             OleDbDataReader reader = cmdDb.ExecuteReader();
-
 
             int count = 0;
             while (reader.Read())
@@ -38,17 +35,14 @@ namespace LoginSystem
                 SistGestMainWind SistGestMainWind = new SistGestMainWind();
                 SistGestMainWind.ShowDialog();
 
+                loginwind loginwind = new loginwind();
+                loginwind.Hide();
             }
-            else if (count != 1)
+            else if (count == 0)
             {
-                MessageBox.Show("There are two accounts with the same username and password");
-                connectionDb.Close();
-            }
-            else
-            {
-                MessageBox.Show("Incorrect Username/Password");
-                connectionDb.Close();
+                MessageBox.Show("Invalid Username/Password. Solicite acceso al Sistema de Gestión Académica en caso de no tener Usuario y Contraseña.");
             }
         }
     }
 }
+
