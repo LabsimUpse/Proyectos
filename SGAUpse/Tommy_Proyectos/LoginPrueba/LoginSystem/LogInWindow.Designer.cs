@@ -77,11 +77,14 @@
             this.labelced = new System.Windows.Forms.Label();
             this.passrecov = new System.Windows.Forms.Button();
             this.grpBoxRecPass = new System.Windows.Forms.GroupBox();
+            this.buttonPassRecCancel = new System.Windows.Forms.Button();
+            this.buttonPassRecAccept = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbBoxRecPassMet = new System.Windows.Forms.ComboBox();
             this.grpBoxLogIn = new System.Windows.Forms.GroupBox();
-            this.buttonPassRecAccept = new System.Windows.Forms.Button();
-            this.buttonPassRecCancel = new System.Windows.Forms.Button();
+            this.ingresarComoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menubarlogin.SuspendLayout();
             this.grpBoxCteAcc.SuspendLayout();
             this.grpBoxPregSeg.SuspendLayout();
@@ -173,6 +176,7 @@
             // filemenu
             // 
             this.filemenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarComoAdministradorToolStripMenuItem,
             this.exitmenuitem});
             this.filemenu.Name = "filemenu";
             this.filemenu.Size = new System.Drawing.Size(37, 20);
@@ -181,7 +185,7 @@
             // exitmenuitem
             // 
             this.exitmenuitem.Name = "exitmenuitem";
-            this.exitmenuitem.Size = new System.Drawing.Size(92, 22);
+            this.exitmenuitem.Size = new System.Drawing.Size(159, 22);
             this.exitmenuitem.Text = "&Exit";
             this.exitmenuitem.Click += new System.EventHandler(this.exitmenuitem_Click);
             // 
@@ -616,6 +620,26 @@
             this.grpBoxRecPass.Visible = false;
             this.grpBoxRecPass.Enter += new System.EventHandler(this.grpBoxRecPass_Enter);
             // 
+            // buttonPassRecCancel
+            // 
+            this.buttonPassRecCancel.Enabled = false;
+            this.buttonPassRecCancel.Location = new System.Drawing.Point(241, 309);
+            this.buttonPassRecCancel.Name = "buttonPassRecCancel";
+            this.buttonPassRecCancel.Size = new System.Drawing.Size(132, 29);
+            this.buttonPassRecCancel.TabIndex = 3;
+            this.buttonPassRecCancel.Text = "Cancelar";
+            this.buttonPassRecCancel.UseVisualStyleBackColor = true;
+            // 
+            // buttonPassRecAccept
+            // 
+            this.buttonPassRecAccept.Enabled = false;
+            this.buttonPassRecAccept.Location = new System.Drawing.Point(241, 278);
+            this.buttonPassRecAccept.Name = "buttonPassRecAccept";
+            this.buttonPassRecAccept.Size = new System.Drawing.Size(132, 29);
+            this.buttonPassRecAccept.TabIndex = 2;
+            this.buttonPassRecAccept.Text = "Aceptar";
+            this.buttonPassRecAccept.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -654,25 +678,26 @@
             this.grpBoxLogIn.TabIndex = 35;
             this.grpBoxLogIn.TabStop = false;
             // 
-            // buttonPassRecAccept
+            // ingresarComoAdministradorToolStripMenuItem
             // 
-            this.buttonPassRecAccept.Enabled = false;
-            this.buttonPassRecAccept.Location = new System.Drawing.Point(241, 278);
-            this.buttonPassRecAccept.Name = "buttonPassRecAccept";
-            this.buttonPassRecAccept.Size = new System.Drawing.Size(132, 29);
-            this.buttonPassRecAccept.TabIndex = 2;
-            this.buttonPassRecAccept.Text = "Aceptar";
-            this.buttonPassRecAccept.UseVisualStyleBackColor = true;
+            this.ingresarComoAdministradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administradorToolStripMenuItem,
+            this.docenteToolStripMenuItem});
+            this.ingresarComoAdministradorToolStripMenuItem.Name = "ingresarComoAdministradorToolStripMenuItem";
+            this.ingresarComoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.ingresarComoAdministradorToolStripMenuItem.Text = "Ingresar como...";
             // 
-            // buttonPassRecCancel
+            // administradorToolStripMenuItem
             // 
-            this.buttonPassRecCancel.Enabled = false;
-            this.buttonPassRecCancel.Location = new System.Drawing.Point(241, 309);
-            this.buttonPassRecCancel.Name = "buttonPassRecCancel";
-            this.buttonPassRecCancel.Size = new System.Drawing.Size(132, 29);
-            this.buttonPassRecCancel.TabIndex = 3;
-            this.buttonPassRecCancel.Text = "Cancelar";
-            this.buttonPassRecCancel.UseVisualStyleBackColor = true;
+            this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.administradorToolStripMenuItem.Text = "Administrador";
+            // 
+            // docenteToolStripMenuItem
+            // 
+            this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.docenteToolStripMenuItem.Text = "Docente";
             // 
             // loginwind
             // 
@@ -762,6 +787,9 @@
         private System.Windows.Forms.GroupBox grpBoxLogIn;
         private System.Windows.Forms.Button buttonPassRecAccept;
         private System.Windows.Forms.Button buttonPassRecCancel;
+        private System.Windows.Forms.ToolStripMenuItem ingresarComoAdministradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem docenteToolStripMenuItem;
     }
 }
 

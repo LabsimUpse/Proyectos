@@ -23,3 +23,4 @@ C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULA
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.loginwind.resources
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.SistGestMainWind.resources
 C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\bin\Debug\Usuarios-Contraseñas.mdb
+C:\Users\J FALQUEZ AROSEMENA\Documents\JUANITO\UNIVERSIDAD\LABORATORIO DE SIMULACIÓN DE YACIMIENTOS\Proyectos\SGAUpse\Tommy_Proyectos\LoginPrueba\LoginSystem\obj\Debug\LoginSystem.ValidPregSeg.resources

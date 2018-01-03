@@ -71,6 +71,12 @@
     <Compile Include="SistGestMainWind.Designer.cs">
       <DependentUpon>SistGestMainWind.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidPregSeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidPregSeg.Designer.cs">
+      <DependentUpon>ValidPregSeg.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CreateAccountWindow.resx">
       <DependentUpon>CreateAccountWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +94,9 @@
     </Compile>
     <EmbeddedResource Include="SistGestMainWind.resx">
       <DependentUpon>SistGestMainWind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidPregSeg.resx">
+      <DependentUpon>ValidPregSeg.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -43,6 +43,7 @@ namespace LoginSystem
                 MessageBox.Show("Invalid Username/Password. Solicite acceso al Sistema de Gestión Académica en caso de no tener Usuario y Contraseña.");
             }
         }
+
     }
 }
 
