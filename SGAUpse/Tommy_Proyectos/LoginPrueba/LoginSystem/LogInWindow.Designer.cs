@@ -37,6 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menubarlogin = new System.Windows.Forms.MenuStrip();
             this.filemenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarComoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitmenuitem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpBoxCteAcc = new System.Windows.Forms.GroupBox();
             this.grpBoxPregSeg = new System.Windows.Forms.GroupBox();
@@ -82,9 +85,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbBoxRecPassMet = new System.Windows.Forms.ComboBox();
             this.grpBoxLogIn = new System.Windows.Forms.GroupBox();
-            this.ingresarComoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menubarlogin.SuspendLayout();
             this.grpBoxCteAcc.SuspendLayout();
             this.grpBoxPregSeg.SuspendLayout();
@@ -181,6 +181,27 @@
             this.filemenu.Name = "filemenu";
             this.filemenu.Size = new System.Drawing.Size(37, 20);
             this.filemenu.Text = "&File";
+            // 
+            // ingresarComoAdministradorToolStripMenuItem
+            // 
+            this.ingresarComoAdministradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administradorToolStripMenuItem,
+            this.docenteToolStripMenuItem});
+            this.ingresarComoAdministradorToolStripMenuItem.Name = "ingresarComoAdministradorToolStripMenuItem";
+            this.ingresarComoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.ingresarComoAdministradorToolStripMenuItem.Text = "Ingresar como...";
+            // 
+            // administradorToolStripMenuItem
+            // 
+            this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.administradorToolStripMenuItem.Text = "Administrador";
+            // 
+            // docenteToolStripMenuItem
+            // 
+            this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.docenteToolStripMenuItem.Text = "Docente";
             // 
             // exitmenuitem
             // 
@@ -677,27 +698,6 @@
             this.grpBoxLogIn.Size = new System.Drawing.Size(379, 226);
             this.grpBoxLogIn.TabIndex = 35;
             this.grpBoxLogIn.TabStop = false;
-            // 
-            // ingresarComoAdministradorToolStripMenuItem
-            // 
-            this.ingresarComoAdministradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administradorToolStripMenuItem,
-            this.docenteToolStripMenuItem});
-            this.ingresarComoAdministradorToolStripMenuItem.Name = "ingresarComoAdministradorToolStripMenuItem";
-            this.ingresarComoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.ingresarComoAdministradorToolStripMenuItem.Text = "Ingresar como...";
-            // 
-            // administradorToolStripMenuItem
-            // 
-            this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.administradorToolStripMenuItem.Text = "Administrador";
-            // 
-            // docenteToolStripMenuItem
-            // 
-            this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.docenteToolStripMenuItem.Text = "Docente";
             // 
             // loginwind
             // 

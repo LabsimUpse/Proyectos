@@ -14,10 +14,10 @@ namespace LoginSystem
         //Instanciación de la clase "DocInfoGet"
         DocInfoGet DocenteInfo = new DocInfoGet();
 
-        public void DocInfoInsert(TextBox textced, TextBox textnomb, TextBox textapel, TextBox texttercniv, TextBox textcuarniv, TextBox textquinniv, TextBox textusername, TextBox textcont)
+        public void DocInfoInsert(TextBox textced, TextBox textnomb, TextBox textapel, TextBox texttercniv, TextBox textcuarniv, TextBox textquinniv, TextBox textusername, TextBox textcont, ComboBox cmbBoxPreg1, TextBox textRespPreg1, ComboBox cmbBoxPreg2, TextBox textRespPreg2, ComboBox cmbBoxPreg3, TextBox textRespPreg3, ComboBox cmbBoxPreg4, TextBox textRespPreg4, ComboBox cmbBoxPreg5, TextBox textRespPreg5)
         {
 
-            //Get-Set de valores para Información Básica del Usuario
+            //Get-Set de valores para INFORMACIÓN BÁSICA del Usuario
             DocenteInfo.CedIdent1 = textced.Text;
             DocenteInfo.Nomb1 = textnomb.Text;
             DocenteInfo.Apel1 = textapel.Text;
@@ -27,54 +27,24 @@ namespace LoginSystem
             DocenteInfo.USN1 = textusername.Text;
             DocenteInfo.PassW1 = textcont.Text;
 
-            //Información se inserta por medio del miembro "dataInsert" de la clase "DatabaseConnection"
-            DocInfoInsNewConnDB.dataInsert(DocenteInfo);
-            
-          /* try
-            {
+            //Get-Set de valores para las PREGUNTAS de seguridad seleccionadas por el Usuario
+            DocenteInfo.Preg1a = cmbBoxPreg1.GetItemText(cmbBoxPreg1.SelectedItem);
+            DocenteInfo.Preg2a = cmbBoxPreg2.GetItemText(cmbBoxPreg2.SelectedItem);
+            DocenteInfo.Preg3a = cmbBoxPreg3.GetItemText(cmbBoxPreg3.SelectedItem);
+            DocenteInfo.Preg4a = cmbBoxPreg4.GetItemText(cmbBoxPreg4.SelectedItem);
+            DocenteInfo.Preg5a = cmbBoxPreg5.GetItemText(cmbBoxPreg5.SelectedItem);
 
-            }
-            catch(Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-
-            }
-            finally
-            {
-                
-
-            }*/
-        }
-
-        public void DocInfoPregInsertar(ComboBox cmbBoxPreg1, ComboBox cmbBoxPreg2, ComboBox cmbBoxPreg3, ComboBox cmbBoxPreg4, ComboBox cmbBoxPreg5)
-        {
-
-            //Get-Set de las preguntas seleccionadas por el usuario
-            DocenteInfo.Preg1a = cmbBoxPreg1.ToString();
-            DocenteInfo.Preg2a = cmbBoxPreg2.ToString();
-            DocenteInfo.Preg3a = cmbBoxPreg3.ToString();
-            DocenteInfo.Preg4a = cmbBoxPreg4.ToString();
-            DocenteInfo.Preg5a = cmbBoxPreg5.ToString();
-
-            //Uso de "dataInsert" Method para ingresar los valores de las preguntas en las DB
-            DocInfoInsNewConnDB.dataInsert(DocenteInfo);
-
-        }
-
-        public void DocInfoRespPregInsertar(TextBox textRespPreg1, TextBox textRespPreg2, TextBox textRespPreg3, TextBox textRespPreg4, TextBox textRespPreg5)
-        {
-
-            //Get-Set de las respuestas a las preguntas del usuario
+            //Get-Set de valores para las RESPUESTAS a las PREGUNTAS de seguridad seleccionadas por el Usuario
             DocenteInfo.RespPreg1a = textRespPreg1.Text;
             DocenteInfo.RespPreg2a = textRespPreg2.Text;
             DocenteInfo.RespPreg3a = textRespPreg3.Text;
             DocenteInfo.RespPreg4a = textRespPreg4.Text;
             DocenteInfo.RespPreg5a = textRespPreg5.Text;
 
-            //Uso de "dataInsert" Method para ingresar los valores de las respuestas para las preguntas
+            //Información se inserta por medio del miembro "dataInsert" de la clase "DatabaseConnection"
             DocInfoInsNewConnDB.dataInsert(DocenteInfo);
-        }
 
+        }
 
     }
 }

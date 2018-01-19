@@ -132,46 +132,44 @@ namespace LoginSystem
         private void buttoncreate_Click(object sender, EventArgs e)
         {
 
-            try
+            bool condCteUser1 = true;
+            bool condCteUser2 = true;
+            bool condCteUser3 = true;
+            bool condCteUserGlobal = true;
+
+            condCteUser1 = (textced == null) && (textnomb == null) && (textapel == null) && (texttercniv == null) && (textcuarniv == null) && (textquinniv == null) && (textusername == null) && (textcont == null);
+
+            condCteUser2 = (cmbBoxPreg1 == null) && (cmbBoxPreg2 == null) && (cmbBoxPreg3 == null) && (cmbBoxPreg4 == null) && (cmbBoxPreg5 == null);
+
+            condCteUser3 = (textRespPreg1 == null) && (textRespPreg2 == null) && (textRespPreg3 == null) && (textRespPreg4 == null) && (textRespPreg5 == null);
+
+            condCteUserGlobal = (condCteUser1 && condCteUser2 && condCteUser3);
+
+            if (condCteUserGlobal != true)
             {
-
-                bool condCteUser1, condCteUser2, condCteUser3, condCteUserGlobal;
-
-                condCteUser1 = (textced == null) && (textnomb == null) && (textapel == null) && (texttercniv == null) && (textcuarniv == null) && (textquinniv == null) && (textusername == null) && (textcont == null);
-
-                condCteUser2 = (cmbBoxPreg1 == null) && (cmbBoxPreg2 == null) && (cmbBoxPreg3 == null) && (cmbBoxPreg4 == null) && (cmbBoxPreg5 == null);
-
-                condCteUser3 = (textRespPreg1 == null) && (textRespPreg2 == null) && (textRespPreg3 == null) && (textRespPreg4 == null) && (textRespPreg5 == null);
-
-                condCteUserGlobal = condCteUser1 && condCteUser2 && condCteUser3;
-
-                if (condCteUserGlobal != true)
+                try
                 {
+
                     //Se crea el usuario que se desea agregar; En caso de error, revisar clase "InsDocInfo"
                     InsDocInfo Docente = new InsDocInfo();
 
 
                     //Se utiliza el "DocInfoInsert" Method de la clase "InsDocInfo" para poder agregar información básica del usuario a la base de datos
-                    Docente.DocInfoInsert(textced, textnomb, textapel, texttercniv, textcuarniv, textquinniv, textusername, textcont);
+                    Docente.DocInfoInsert(textced, textnomb, textapel, texttercniv, textcuarniv, textquinniv, textusername, textcont, cmbBoxPreg1, textRespPreg1, cmbBoxPreg2, textRespPreg2, cmbBoxPreg3, textRespPreg3, cmbBoxPreg4, textRespPreg4, cmbBoxPreg5, textRespPreg5);
 
-                    //Se utiliza el "DocInfoPregInsertar" Method de la clase "InsDocInfo" para poder agregar las preguntas de seguridad seleccionadas por el usuario a la base de datos
-//                    Docente.DocInfoPregInsertar(cmbBoxPreg1, cmbBoxPreg2, cmbBoxPreg3, cmbBoxPreg4, cmbBoxPreg5);
 
-                    //Se utiliza el "DocInfoRespPregInsertar" Method de la clase "InsDocInfo" para poder agregar las respuestas a las preguntas de seguridad del usuario a la base de datos
-//                   Docente.DocInfoRespPregInsertar(textRespPreg1, textRespPreg2, textRespPreg3, textRespPreg4, textRespPreg5);
-
-                    MessageBox.Show("Se ha registrado correctamente el usuario");
+                    MessageBox.Show("Se ha registrado correctamente el usuario.");
 
                     grpBoxCteAcc.Visible = false;
                     this.Width = 413;
                     this.Height = 300;
                 }
+                catch
+                {
+                    MessageBox.Show("No se ha podido agregar el usuario.");
+                }
+            };
 
-            }
-            catch
-            {
-                MessageBox.Show("No se ha podido agregar el usuario");
-            }
 
 
         } // Confirma la creación del usuario e ingresa los datos en el DB de usuarios
