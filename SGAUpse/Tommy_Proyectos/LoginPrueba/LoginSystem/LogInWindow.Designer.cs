@@ -42,6 +42,7 @@
             this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitmenuitem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpBoxCteAcc = new System.Windows.Forms.GroupBox();
+            this.buttonVerDatos = new System.Windows.Forms.Button();
             this.grpBoxPregSeg = new System.Windows.Forms.GroupBox();
             this.labelPreg5 = new System.Windows.Forms.Label();
             this.labelPreg4 = new System.Windows.Forms.Label();
@@ -58,8 +59,6 @@
             this.cmbBoxPreg2 = new System.Windows.Forms.ComboBox();
             this.cmbBoxPreg1 = new System.Windows.Forms.ComboBox();
             this.labelPreg1 = new System.Windows.Forms.Label();
-            this.addPicButton = new System.Windows.Forms.Button();
-            this.userpic = new System.Windows.Forms.PictureBox();
             this.labelcont = new System.Windows.Forms.Label();
             this.textcont = new System.Windows.Forms.TextBox();
             this.textusername = new System.Windows.Forms.TextBox();
@@ -88,7 +87,6 @@
             this.menubarlogin.SuspendLayout();
             this.grpBoxCteAcc.SuspendLayout();
             this.grpBoxPregSeg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userpic)).BeginInit();
             this.grpBoxRecPass.SuspendLayout();
             this.grpBoxLogIn.SuspendLayout();
             this.SuspendLayout();
@@ -212,9 +210,8 @@
             // 
             // grpBoxCteAcc
             // 
+            this.grpBoxCteAcc.Controls.Add(this.buttonVerDatos);
             this.grpBoxCteAcc.Controls.Add(this.grpBoxPregSeg);
-            this.grpBoxCteAcc.Controls.Add(this.addPicButton);
-            this.grpBoxCteAcc.Controls.Add(this.userpic);
             this.grpBoxCteAcc.Controls.Add(this.labelcont);
             this.grpBoxCteAcc.Controls.Add(this.textcont);
             this.grpBoxCteAcc.Controls.Add(this.textusername);
@@ -240,6 +237,16 @@
             this.grpBoxCteAcc.TabStop = false;
             this.grpBoxCteAcc.Text = "Sistema de Gestión Académica";
             this.grpBoxCteAcc.Visible = false;
+            // 
+            // buttonVerDatos
+            // 
+            this.buttonVerDatos.Location = new System.Drawing.Point(292, 198);
+            this.buttonVerDatos.Name = "buttonVerDatos";
+            this.buttonVerDatos.Size = new System.Drawing.Size(127, 20);
+            this.buttonVerDatos.TabIndex = 36;
+            this.buttonVerDatos.Text = "Verificar Datos";
+            this.buttonVerDatos.UseVisualStyleBackColor = true;
+            this.buttonVerDatos.Click += new System.EventHandler(this.buttonVerDatos_Click);
             // 
             // grpBoxPregSeg
             // 
@@ -423,28 +430,11 @@
             this.labelPreg1.TabIndex = 29;
             this.labelPreg1.Text = "Pregunta 1:";
             // 
-            // addPicButton
-            // 
-            this.addPicButton.Location = new System.Drawing.Point(6, 168);
-            this.addPicButton.Name = "addPicButton";
-            this.addPicButton.Size = new System.Drawing.Size(135, 37);
-            this.addPicButton.TabIndex = 28;
-            this.addPicButton.Text = "Agregar Foto";
-            this.addPicButton.UseVisualStyleBackColor = true;
-            // 
-            // userpic
-            // 
-            this.userpic.Location = new System.Drawing.Point(6, 15);
-            this.userpic.Name = "userpic";
-            this.userpic.Size = new System.Drawing.Size(135, 147);
-            this.userpic.TabIndex = 27;
-            this.userpic.TabStop = false;
-            // 
             // labelcont
             // 
             this.labelcont.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelcont.AutoSize = true;
-            this.labelcont.Location = new System.Drawing.Point(155, 197);
+            this.labelcont.Location = new System.Drawing.Point(25, 201);
             this.labelcont.Name = "labelcont";
             this.labelcont.Size = new System.Drawing.Size(64, 13);
             this.labelcont.TabIndex = 17;
@@ -453,7 +443,7 @@
             // textcont
             // 
             this.textcont.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textcont.Location = new System.Drawing.Point(272, 194);
+            this.textcont.Location = new System.Drawing.Point(142, 198);
             this.textcont.Name = "textcont";
             this.textcont.Size = new System.Drawing.Size(144, 20);
             this.textcont.TabIndex = 16;
@@ -463,7 +453,7 @@
             // textusername
             // 
             this.textusername.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textusername.Location = new System.Drawing.Point(272, 168);
+            this.textusername.Location = new System.Drawing.Point(142, 172);
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(144, 20);
             this.textusername.TabIndex = 15;
@@ -473,7 +463,7 @@
             // 
             this.labelusername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelusername.AutoSize = true;
-            this.labelusername.Location = new System.Drawing.Point(155, 171);
+            this.labelusername.Location = new System.Drawing.Point(25, 175);
             this.labelusername.Name = "labelusername";
             this.labelusername.Size = new System.Drawing.Size(46, 13);
             this.labelusername.TabIndex = 14;
@@ -482,7 +472,7 @@
             // textquinniv
             // 
             this.textquinniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textquinniv.Location = new System.Drawing.Point(272, 142);
+            this.textquinniv.Location = new System.Drawing.Point(142, 146);
             this.textquinniv.Name = "textquinniv";
             this.textquinniv.Size = new System.Drawing.Size(144, 20);
             this.textquinniv.TabIndex = 13;
@@ -492,7 +482,7 @@
             // 
             this.labelquinniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelquinniv.AutoSize = true;
-            this.labelquinniv.Location = new System.Drawing.Point(155, 145);
+            this.labelquinniv.Location = new System.Drawing.Point(25, 149);
             this.labelquinniv.Name = "labelquinniv";
             this.labelquinniv.Size = new System.Drawing.Size(105, 13);
             this.labelquinniv.TabIndex = 12;
@@ -501,7 +491,7 @@
             // textcuarniv
             // 
             this.textcuarniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textcuarniv.Location = new System.Drawing.Point(272, 116);
+            this.textcuarniv.Location = new System.Drawing.Point(142, 120);
             this.textcuarniv.Name = "textcuarniv";
             this.textcuarniv.Size = new System.Drawing.Size(144, 20);
             this.textcuarniv.TabIndex = 11;
@@ -511,7 +501,7 @@
             // 
             this.labelcuarniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelcuarniv.AutoSize = true;
-            this.labelcuarniv.Location = new System.Drawing.Point(155, 119);
+            this.labelcuarniv.Location = new System.Drawing.Point(25, 123);
             this.labelcuarniv.Name = "labelcuarniv";
             this.labelcuarniv.Size = new System.Drawing.Size(105, 13);
             this.labelcuarniv.TabIndex = 10;
@@ -520,7 +510,7 @@
             // texttercniv
             // 
             this.texttercniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.texttercniv.Location = new System.Drawing.Point(272, 90);
+            this.texttercniv.Location = new System.Drawing.Point(142, 94);
             this.texttercniv.Name = "texttercniv";
             this.texttercniv.Size = new System.Drawing.Size(144, 20);
             this.texttercniv.TabIndex = 9;
@@ -529,7 +519,7 @@
             // textapel
             // 
             this.textapel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textapel.Location = new System.Drawing.Point(272, 64);
+            this.textapel.Location = new System.Drawing.Point(142, 68);
             this.textapel.Name = "textapel";
             this.textapel.Size = new System.Drawing.Size(144, 20);
             this.textapel.TabIndex = 8;
@@ -538,7 +528,7 @@
             // textnomb
             // 
             this.textnomb.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textnomb.Location = new System.Drawing.Point(272, 38);
+            this.textnomb.Location = new System.Drawing.Point(142, 42);
             this.textnomb.Name = "textnomb";
             this.textnomb.Size = new System.Drawing.Size(144, 20);
             this.textnomb.TabIndex = 7;
@@ -547,7 +537,7 @@
             // textced
             // 
             this.textced.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textced.Location = new System.Drawing.Point(272, 12);
+            this.textced.Location = new System.Drawing.Point(142, 16);
             this.textced.Name = "textced";
             this.textced.Size = new System.Drawing.Size(144, 20);
             this.textced.TabIndex = 6;
@@ -579,7 +569,7 @@
             // 
             this.labelterniv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelterniv.AutoSize = true;
-            this.labelterniv.Location = new System.Drawing.Point(155, 93);
+            this.labelterniv.Location = new System.Drawing.Point(25, 97);
             this.labelterniv.Name = "labelterniv";
             this.labelterniv.Size = new System.Drawing.Size(105, 13);
             this.labelterniv.TabIndex = 3;
@@ -589,7 +579,7 @@
             // 
             this.labelapel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelapel.AutoSize = true;
-            this.labelapel.Location = new System.Drawing.Point(155, 67);
+            this.labelapel.Location = new System.Drawing.Point(25, 71);
             this.labelapel.Name = "labelapel";
             this.labelapel.Size = new System.Drawing.Size(52, 13);
             this.labelapel.TabIndex = 2;
@@ -599,7 +589,7 @@
             // 
             this.labelnomb.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelnomb.AutoSize = true;
-            this.labelnomb.Location = new System.Drawing.Point(155, 41);
+            this.labelnomb.Location = new System.Drawing.Point(25, 45);
             this.labelnomb.Name = "labelnomb";
             this.labelnomb.Size = new System.Drawing.Size(52, 13);
             this.labelnomb.TabIndex = 1;
@@ -609,7 +599,7 @@
             // 
             this.labelced.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelced.AutoSize = true;
-            this.labelced.Location = new System.Drawing.Point(155, 15);
+            this.labelced.Location = new System.Drawing.Point(25, 19);
             this.labelced.Name = "labelced";
             this.labelced.Size = new System.Drawing.Size(43, 13);
             this.labelced.TabIndex = 0;
@@ -721,7 +711,6 @@
             this.grpBoxCteAcc.PerformLayout();
             this.grpBoxPregSeg.ResumeLayout(false);
             this.grpBoxPregSeg.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userpic)).EndInit();
             this.grpBoxRecPass.ResumeLayout(false);
             this.grpBoxRecPass.PerformLayout();
             this.grpBoxLogIn.ResumeLayout(false);
@@ -743,9 +732,6 @@
         private System.Windows.Forms.MenuStrip menubarlogin;
         private System.Windows.Forms.ToolStripMenuItem filemenu;
         private System.Windows.Forms.ToolStripMenuItem exitmenuitem;
-        private System.Windows.Forms.GroupBox grpBoxCteAcc;
-        private System.Windows.Forms.Button addPicButton;
-        private System.Windows.Forms.PictureBox userpic;
         private System.Windows.Forms.Label labelcont;
         private System.Windows.Forms.TextBox textcont;
         private System.Windows.Forms.TextBox textusername;
@@ -759,7 +745,6 @@
         private System.Windows.Forms.TextBox textnomb;
         private System.Windows.Forms.TextBox textced;
         private System.Windows.Forms.Button buttoncancel;
-        private System.Windows.Forms.Button buttoncreate;
         private System.Windows.Forms.Label labelterniv;
         private System.Windows.Forms.Label labelapel;
         private System.Windows.Forms.Label labelnomb;
@@ -790,6 +775,9 @@
         private System.Windows.Forms.ToolStripMenuItem ingresarComoAdministradorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem docenteToolStripMenuItem;
+        public System.Windows.Forms.GroupBox grpBoxCteAcc;
+        public System.Windows.Forms.Button buttonVerDatos;
+        public System.Windows.Forms.Button buttoncreate;
     }
 }
 

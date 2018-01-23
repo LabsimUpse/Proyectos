@@ -20,7 +20,6 @@ namespace LoginSystem
         private OleDbConnection connectionDb = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb"); // Habilita la conexión a la DB
 
 
-
         public loginwind()
         {
             InitializeComponent();
@@ -38,19 +37,37 @@ namespace LoginSystem
 
         private void ingresar_Click(object sender, EventArgs e)
         {
-            try
+
+            // Condición para poder realizar el LogIn
+            bool condLogIn1 = ((username.Text == null) && (password.Text == null));
+
+            condLogIn1 = true;
+
+            // Uso de la condición para poder realizar el Log In en conjunto con el método "usersPasswReader" para poder realizar la autenticación al sistema
+            if (condLogIn1 != true)
             {
-                ReadDataBase loginDBReader = new ReadDataBase();
-                loginDBReader.usersPasswReader(textusername.Text, textcont.Text);
+                try
+                {
+                    ReadDataBase loginDBReader = new ReadDataBase();
+                    loginDBReader.usersPasswReader(username.Text, password.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("DBReader Error" + ex);
+                }
+                finally
+                {
+                    connectionDb.Close();
+                    ValidPregSeg UserValid = new ValidPregSeg();
+                    UserValid.ShowDialog();
+                    this.Hide();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("DBReader Error" + ex);
+                MessageBox.Show("Ingrese un nombre de usuario/contraseña correctos.");
             }
-            finally
-            {
-                connectionDb.Close();
-            }
+
         } // Acccede a la DB y revisa que el usuario esté registrado y permite el acceso al SGA
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -71,6 +88,8 @@ namespace LoginSystem
             DatabaseConnection DBTest = new DatabaseConnection();
             DBTest.DBConnectionTester();
             this.CenterToScreen();
+
+            buttoncreate.Enabled = false;
 
         }
 
@@ -132,22 +151,22 @@ namespace LoginSystem
         private void buttoncreate_Click(object sender, EventArgs e)
         {
 
-            bool condCteUser1 = true;
-            bool condCteUser2 = true;
-            bool condCteUser3 = true;
-            bool condCteUserGlobal = true;
 
-            condCteUser1 = (textced == null) && (textnomb == null) && (textapel == null) && (texttercniv == null) && (textcuarniv == null) && (textquinniv == null) && (textusername == null) && (textcont == null);
+            // Condiciones para poder realizar la creación del usuario.
+            bool condCteUser1 = (textced.Text == null) && (textnomb.Text == null) && (textapel.Text == null) && (texttercniv.Text == null) && (textcuarniv.Text == null) && (textquinniv.Text == null) && (textusername.Text == null) && (textcont.Text == null);
 
-            condCteUser2 = (cmbBoxPreg1 == null) && (cmbBoxPreg2 == null) && (cmbBoxPreg3 == null) && (cmbBoxPreg4 == null) && (cmbBoxPreg5 == null);
+            bool condCteUser2 = (cmbBoxPreg1.Text == null) && (cmbBoxPreg2.Text == null) && (cmbBoxPreg3.Text == null) && (cmbBoxPreg4.Text == null) && (cmbBoxPreg5.Text == null);
 
-            condCteUser3 = (textRespPreg1 == null) && (textRespPreg2 == null) && (textRespPreg3 == null) && (textRespPreg4 == null) && (textRespPreg5 == null);
+            bool condCteUser3 = (textRespPreg1.Text == null) && (textRespPreg2.Text == null) && (textRespPreg3.Text == null) && (textRespPreg4.Text == null) && (textRespPreg5.Text == null);
 
-            condCteUserGlobal = (condCteUser1 && condCteUser2 && condCteUser3);
+            bool condCteUserGlobal = (condCteUser1 && condCteUser2 && condCteUser3);
 
-            if (condCteUserGlobal != true)
+            condCteUserGlobal = true;
+
+            try
             {
-                try
+
+                if (condCteUserGlobal != true)
                 {
 
                     //Se crea el usuario que se desea agregar; En caso de error, revisar clase "InsDocInfo"
@@ -163,21 +182,24 @@ namespace LoginSystem
                     grpBoxCteAcc.Visible = false;
                     this.Width = 413;
                     this.Height = 300;
+                    this.CenterToScreen();
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("No se ha podido agregar el usuario.");
+                    MessageBox.Show("Ingrese la información correspondiente en los campos para poder registrar el usuario.");
                 }
-            };
-
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
 
         } // Confirma la creación del usuario e ingresa los datos en el DB de usuarios
 
         private void buttoncancel_Click(object sender, EventArgs e)
         {
             grpBoxCteAcc.Visible = false;
-            this.Width = 350;
+            this.Width = 413;
             this.Height = 300;
             this.CenterToScreen();
         }
@@ -204,6 +226,14 @@ namespace LoginSystem
             this.Width = 350;
             this.CenterToScreen();
         } // Permite solicitar la recuperación de la contraseña
+
+        private void buttonVerDatos_Click(object sender, EventArgs e)
+        {
+            ReadDataBase readDB = new ReadDataBase();
+
+            readDB.readVerifDatos(textced.Text, textusername.Text);
+
+        }
 
     }
 }
