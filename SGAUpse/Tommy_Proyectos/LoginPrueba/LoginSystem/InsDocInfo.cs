@@ -17,13 +17,6 @@ namespace LoginSystem
         public void DocInfoInsert(TextBox textced, TextBox textnomb, TextBox textapel, TextBox texttercniv, TextBox textcuarniv, TextBox textquinniv, TextBox textusername, TextBox textcont, ComboBox cmbBoxPreg1, TextBox textRespPreg1, ComboBox cmbBoxPreg2, TextBox textRespPreg2, ComboBox cmbBoxPreg3, TextBox textRespPreg3, ComboBox cmbBoxPreg4, TextBox textRespPreg4, ComboBox cmbBoxPreg5, TextBox textRespPreg5)
         {
 
-            bool condusercreate1 = ((textced == null) && (textnomb == null) && (textapel == null) && (texttercniv == null) && (textcuarniv == null) && (textquinniv == null) && (textusername == null) && (textcont == null));
-            bool condusercreate2 = ((cmbBoxPreg1 == null) && (cmbBoxPreg2 == null) && (cmbBoxPreg3 == null) && (cmbBoxPreg4 == null) && (cmbBoxPreg5 == null));
-            bool condusercreate3 = ((textRespPreg1 == null) && (textRespPreg2 == null) && (textRespPreg3 == null) && (textRespPreg4 == null) && (textRespPreg5 == null));
-            bool condusercreateGlob = ((condusercreate1 && condusercreate2 && condusercreate3));
-
-            condusercreateGlob = true;
-
             //Get-Set de valores para INFORMACIÓN BÁSICA del Usuario
             DocenteInfo.CedIdent1 = textced.Text;
             DocenteInfo.Nomb1 = textnomb.Text;

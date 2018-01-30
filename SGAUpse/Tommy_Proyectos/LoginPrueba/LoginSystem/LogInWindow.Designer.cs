@@ -79,15 +79,22 @@
             this.labelced = new System.Windows.Forms.Label();
             this.passrecov = new System.Windows.Forms.Button();
             this.grpBoxRecPass = new System.Windows.Forms.GroupBox();
+            this.grpBoxRecPassCorreo = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonPassRecCancel = new System.Windows.Forms.Button();
             this.buttonPassRecAccept = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbBoxRecPassMet = new System.Windows.Forms.ComboBox();
             this.grpBoxLogIn = new System.Windows.Forms.GroupBox();
+            this.checkBoxAdminLogin = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.menubarlogin.SuspendLayout();
             this.grpBoxCteAcc.SuspendLayout();
             this.grpBoxPregSeg.SuspendLayout();
             this.grpBoxRecPass.SuspendLayout();
+            this.grpBoxRecPassCorreo.SuspendLayout();
             this.grpBoxLogIn.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,7 +121,7 @@
             // labeluser
             // 
             this.labeluser.AutoSize = true;
-            this.labeluser.Location = new System.Drawing.Point(69, 79);
+            this.labeluser.Location = new System.Drawing.Point(57, 48);
             this.labeluser.Name = "labeluser";
             this.labeluser.Size = new System.Drawing.Size(46, 13);
             this.labeluser.TabIndex = 2;
@@ -123,7 +130,7 @@
             // labelpassw
             // 
             this.labelpassw.AutoSize = true;
-            this.labelpassw.Location = new System.Drawing.Point(69, 115);
+            this.labelpassw.Location = new System.Drawing.Point(57, 84);
             this.labelpassw.Name = "labelpassw";
             this.labelpassw.Size = new System.Drawing.Size(64, 13);
             this.labelpassw.TabIndex = 3;
@@ -131,7 +138,7 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(178, 76);
+            this.username.Location = new System.Drawing.Point(189, 45);
             this.username.MaximumSize = new System.Drawing.Size(149, 20);
             this.username.MinimumSize = new System.Drawing.Size(149, 20);
             this.username.Name = "username";
@@ -141,7 +148,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(178, 112);
+            this.password.Location = new System.Drawing.Point(189, 81);
             this.password.MaximumSize = new System.Drawing.Size(149, 20);
             this.password.MinimumSize = new System.Drawing.Size(149, 20);
             this.password.Name = "password";
@@ -154,7 +161,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(55, 16);
+            this.label1.Location = new System.Drawing.Point(56, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 24);
             this.label1.TabIndex = 6;
@@ -607,7 +614,7 @@
             // 
             // passrecov
             // 
-            this.passrecov.Location = new System.Drawing.Point(141, 174);
+            this.passrecov.Location = new System.Drawing.Point(6, 184);
             this.passrecov.Name = "passrecov";
             this.passrecov.Size = new System.Drawing.Size(113, 36);
             this.passrecov.TabIndex = 33;
@@ -617,6 +624,7 @@
             // 
             // grpBoxRecPass
             // 
+            this.grpBoxRecPass.Controls.Add(this.grpBoxRecPassCorreo);
             this.grpBoxRecPass.Controls.Add(this.buttonPassRecCancel);
             this.grpBoxRecPass.Controls.Add(this.buttonPassRecAccept);
             this.grpBoxRecPass.Controls.Add(this.label2);
@@ -630,6 +638,33 @@
             this.grpBoxRecPass.Text = "Recuperar Contraseña";
             this.grpBoxRecPass.Visible = false;
             this.grpBoxRecPass.Enter += new System.EventHandler(this.grpBoxRecPass_Enter);
+            // 
+            // grpBoxRecPassCorreo
+            // 
+            this.grpBoxRecPassCorreo.Controls.Add(this.label3);
+            this.grpBoxRecPassCorreo.Controls.Add(this.textBox1);
+            this.grpBoxRecPassCorreo.Location = new System.Drawing.Point(6, 61);
+            this.grpBoxRecPassCorreo.Name = "grpBoxRecPassCorreo";
+            this.grpBoxRecPassCorreo.Size = new System.Drawing.Size(367, 99);
+            this.grpBoxRecPassCorreo.TabIndex = 6;
+            this.grpBoxRecPassCorreo.TabStop = false;
+            this.grpBoxRecPassCorreo.Text = "Recuperación de contraseña por correo electrónico";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(208, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Ingrese su dirección de correo electrónico:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(355, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // buttonPassRecCancel
             // 
@@ -675,6 +710,9 @@
             // 
             // grpBoxLogIn
             // 
+            this.grpBoxLogIn.Controls.Add(this.label4);
+            this.grpBoxLogIn.Controls.Add(this.textBox2);
+            this.grpBoxLogIn.Controls.Add(this.checkBoxAdminLogin);
             this.grpBoxLogIn.Controls.Add(this.passrecov);
             this.grpBoxLogIn.Controls.Add(this.label1);
             this.grpBoxLogIn.Controls.Add(this.labeluser);
@@ -688,6 +726,35 @@
             this.grpBoxLogIn.Size = new System.Drawing.Size(379, 226);
             this.grpBoxLogIn.TabIndex = 35;
             this.grpBoxLogIn.TabStop = false;
+            // 
+            // checkBoxAdminLogin
+            // 
+            this.checkBoxAdminLogin.AutoSize = true;
+            this.checkBoxAdminLogin.Location = new System.Drawing.Point(134, 144);
+            this.checkBoxAdminLogin.Name = "checkBoxAdminLogin";
+            this.checkBoxAdminLogin.Size = new System.Drawing.Size(159, 17);
+            this.checkBoxAdminLogin.TabIndex = 34;
+            this.checkBoxAdminLogin.Text = "Ingresar como Administrador";
+            this.checkBoxAdminLogin.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(189, 116);
+            this.textBox2.MaximumSize = new System.Drawing.Size(149, 20);
+            this.textBox2.MinimumSize = new System.Drawing.Size(149, 20);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(149, 20);
+            this.textBox2.TabIndex = 35;
+            this.textBox2.UseSystemPasswordChar = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(57, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 13);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Código de Autenticación:";
             // 
             // loginwind
             // 
@@ -713,6 +780,8 @@
             this.grpBoxPregSeg.PerformLayout();
             this.grpBoxRecPass.ResumeLayout(false);
             this.grpBoxRecPass.PerformLayout();
+            this.grpBoxRecPassCorreo.ResumeLayout(false);
+            this.grpBoxRecPassCorreo.PerformLayout();
             this.grpBoxLogIn.ResumeLayout(false);
             this.grpBoxLogIn.PerformLayout();
             this.ResumeLayout(false);
@@ -778,6 +847,12 @@
         public System.Windows.Forms.GroupBox grpBoxCteAcc;
         public System.Windows.Forms.Button buttonVerDatos;
         public System.Windows.Forms.Button buttoncreate;
+        private System.Windows.Forms.GroupBox grpBoxRecPassCorreo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox checkBoxAdminLogin;
     }
 }
 

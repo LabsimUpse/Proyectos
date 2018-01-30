@@ -48,6 +48,7 @@ namespace LoginSystem
             {
                 try
                 {
+
                     ReadDataBase loginDBReader = new ReadDataBase();
                     loginDBReader.usersPasswReader(username.Text, password.Text);
                 }
@@ -88,8 +89,6 @@ namespace LoginSystem
             DatabaseConnection DBTest = new DatabaseConnection();
             DBTest.DBConnectionTester();
             this.CenterToScreen();
-
-            buttoncreate.Enabled = false;
 
         }
 
@@ -189,9 +188,30 @@ namespace LoginSystem
                     MessageBox.Show("Ingrese la información correspondiente en los campos para poder registrar el usuario.");
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error" + ex);
+                MessageBox.Show("Error BC1");
+            }
+            finally
+            {
+                textced.Text = "";
+                textnomb.Text = "";
+                textapel.Text = "";
+                texttercniv.Text = "";
+                textcuarniv.Text = "";
+                textquinniv.Text = "";
+                textusername.Text = "";
+                textcont.Text = "";
+                cmbBoxPreg1.SelectedText = "";
+                textRespPreg1.Text = "";
+                cmbBoxPreg2.SelectedText = "";
+                textRespPreg2.Text = "";
+                cmbBoxPreg3.SelectedText = "";
+                textRespPreg3.Text = "";
+                cmbBoxPreg4.SelectedText = "";
+                textRespPreg4.Text = "";
+                cmbBoxPreg5.SelectedText = "";
+                textRespPreg5.Text = "";
             }
 
         } // Confirma la creación del usuario e ingresa los datos en el DB de usuarios
@@ -234,6 +254,7 @@ namespace LoginSystem
             readDB.readVerifDatos(textced.Text, textusername.Text);
 
         }
+
 
     }
 }

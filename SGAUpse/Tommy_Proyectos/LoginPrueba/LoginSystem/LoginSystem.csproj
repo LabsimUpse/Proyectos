@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateAccountWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateAccountWindow.Designer.cs">
-      <DependentUpon>CreateAccountWindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="DocInfoGet.cs" />
     <Compile Include="InsDocInfo.cs" />
@@ -77,9 +71,6 @@
     <Compile Include="ValidPregSeg.Designer.cs">
       <DependentUpon>ValidPregSeg.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CreateAccountWindow.resx">
-      <DependentUpon>CreateAccountWindow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogInWindow.resx">
       <DependentUpon>LogInWindow.cs</DependentUpon>
     </EmbeddedResource>

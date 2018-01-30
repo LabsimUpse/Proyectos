@@ -17,6 +17,8 @@ namespace LoginSystem
         OleDbConnection connDB;
         OleDbCommand commDB;
 
+
+        // Prueba que se pueda realizar la conexión a la base de datos al momento de iniciar el programa
         public void DBConnectionTester()
         {
             try
@@ -25,12 +27,13 @@ namespace LoginSystem
                 MessageBox.Show("Connection Successful");
                 connDB.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error" + ex);
+                MessageBox.Show("Error DBCT1"); //
             }
         }
 
+        // Genera la conexión a la base de datos cuando se ejecute algún comando que requiera del uso de información
         public DatabaseConnection()
         {
             try 
@@ -38,9 +41,9 @@ namespace LoginSystem
             connDB = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=userspasswords.mdb");
             commDB = connDB.CreateCommand();
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show("Database Connection Error" + ex);
+                MessageBox.Show("Error DBC1"); //
             }
         }
 
@@ -59,9 +62,9 @@ namespace LoginSystem
                     commDB.ExecuteNonQuery();
 
                 }
-                catch (Exception ex)
+                catch
                 {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error DI1"); // 
                 }
                 finally
                 {

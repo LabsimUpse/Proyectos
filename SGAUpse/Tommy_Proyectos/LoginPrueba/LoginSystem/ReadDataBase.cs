@@ -80,49 +80,63 @@ namespace LoginSystem
         public void readVerifDatos(string cedval, string userval)
         {
 
-
-            connectionDb.Open();
-            OleDbCommand cmdDb = new OleDbCommand();
-            cmdDb.Connection = connectionDb;
-            cmdDb.CommandText = "select 1 from UsersPasswordsDocentes where Username='" + cedval + "' and Password='" + userval + "'";
-            OleDbDataReader reader = cmdDb.ExecuteReader();
-
-            int count = 0;
-
-            bool condReadDB1;
-            bool condReadDB2;
-            bool condReadDBGlobal;
-
-            condReadDB1 = (count == 1);
-            condReadDB1 = true;
-
-            condReadDB2 = ((count == 0) && (cedval == null) && (userval == null));
-            condReadDB2 = true;
-
-            condReadDBGlobal = ((condReadDB1 == true) && (condReadDB2 != true));
-            condReadDBGlobal = false;
-
-
-            while (reader.Read())
+            try
             {
-                count = count + 1;
+                connectionDb.Open();
+                OleDbCommand cmdDb = new OleDbCommand();
+                cmdDb.Connection = connectionDb;
+                cmdDb.CommandText = "select 1 from UsersPasswordsDocentes where Username='" + cedval + "' and Password='" + userval + "'";
+                OleDbDataReader reader = cmdDb.ExecuteReader();
+
+                int count = 0;
+
+                bool condReadDB1;
+                bool condReadDB2;
+                bool condReadDB3;
+                bool condReadDBGlobal1;
+                bool condReadDBGlobal2;
+                bool condReadDBGlobal3;
+
+                condReadDB1 = (count == 1);
+
+                condReadDB2 = ((cedval != "") && (userval != ""));
+
+                condReadDB3 = (count == 0);
+
+                condReadDBGlobal1 = ((condReadDB1 == true) && (condReadDB2 != true) && (condReadDB3 != true));
+
+                condReadDBGlobal2 = ((condReadDB2 != true) && (condReadDB3 == true));
+
+                condReadDBGlobal3 = ((condReadDB2 == true) && (condReadDB3 == true));
+
+                while (reader.Read())
+                {
+                    count = count + 1;
+                }
+                if (condReadDBGlobal1 == true)
+                {
+                    MessageBox.Show("Usuario y Cédula ya existentes/registrados.");
+
+                    loginwind.grpBoxCteAcc.Visible = false;
+                    loginwind.Width = 413;
+                    loginwind.Height = 300;
+
+                }
+                else if (condReadDBGlobal2 == true)
+                {
+                    MessageBox.Show("Ingrese información válida para el registro.");
+                }
+                else if (condReadDBGlobal3 == true)
+                {
+                    MessageBox.Show("Usuario no registrado; prosiga con el registro.");
+                    loginwind.buttoncreate.Enabled = true;
+                }
+
             }
-            if (condReadDBGlobal == true)
+            catch
             {
-                MessageBox.Show("Usuario y Cédula ya existentes/registrados.");
-
-                loginwind.grpBoxCteAcc.Visible = false;
-                loginwind.Width = 413;
-                loginwind.Height = 300;
-
+                MessageBox.Show("Error RVD1");
             }
-            else if (condReadDB2 == true)
-            {
-                
-                MessageBox.Show("Usuario y cédula no están registrados en la Base de Datos; Son válidos para el registro.");
-
-            }
-
         }
 
     }
